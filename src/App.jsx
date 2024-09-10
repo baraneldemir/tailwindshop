@@ -30,8 +30,8 @@ function App() {
                     <div className="flex items-center gap-6">
                         <div className="lg:hidden" data-headlessui-state="">
                             <button className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 ui-not-focus-visible:outline-none" aria-label="Toggle site navigation" type="button" aria-expanded="false" data-headlessui-state="">
-                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-6 w-6">
-                                  
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-6 w-6">    
+                                
                                 </svg>
                             </button>
                         </div>
@@ -74,7 +74,7 @@ function App() {
                             <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">As featured in</p>
                             <ul className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start">
                                 <li className="flex">
-                                    <img alt="Forbes" loading="lazy" width="82" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/forbes.c4b4b0dd.svg"/>
+                                    <img alt="Forbes" loading="lazy" width="82" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/forbes.c4b4b0dd.svg"/> 
                                 </li>
                                 <li className="flex">
                                     <img alt="TechCrunch" loading="lazy" width="181" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/techcrunch.fe121d74.svg"/>
