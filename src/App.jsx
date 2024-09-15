@@ -1,57 +1,52 @@
 import { useState, useEffect } from 'react';
 import axios from "axios"
 import './App.css';
+import PayPage from "./PayPage"
+
 
 function App() {
-    const [data, setData] = useState('Loading...');
+    const [persons, setPersons] = useState([]);
+    
+    function getPersons() {
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/messages`)
+        .then(response => {
+            setPersons(response.data)
+        })
+        .catch(error => console.error("Error fetching persons", error))
 
-    // function handleCheckout() {
-    //     axios.get('/')
-    //     .then(response => {
-    //         setData(response.data.message || 'No data available'); // Adjust based on actual response
-    //     })
-    //     .catch(error => {
-    //         console.error("Error fetching products", error);
-    //         setData('Error loading data');
-    //     });
-    // }
+    }
+
+function handleCheckout() {
+    fetch("http://localhost:3001/create-checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          items: [
+            { id: 1, quantity: 3 },
+            { id: 2, quantity: 1 },
+          ],
+        }),
+      })
+        .then(res => {
+          if (res.ok) return res.json()
+          return res.json().then(json => Promise.reject(json))
+        })
+        .then(({ url }) => {
+          window.location = url
+        
+        })
+        .catch(e => {
+          console.error(e.error)
+        })
+
+}
+
     useEffect(() => {
-        axios.get('/')
-            .then((res) => {
-                // Axios already parses JSON, so no need to call res.json()
-                setData(res.data.message);
-            })
-            .catch((error) => {
-                console.error("Error fetching data:", error);
-            })
-    }, []);
+        getPersons()
+    }, [] );
 
-
-    // function handleCheckout() {
-
-        // fetch("http://localhost:3000/create-checkout-session", {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //   },
-        //   body: JSON.stringify({
-        //     items: [
-        //       { id: 1, quantity: 3 },
-        //       { id: 2, quantity: 1 },
-        //     ],
-        //   }),
-        // })
-        //   .then(res => {
-        //     if (res.ok) return res.json()
-        //     return res.json().then(json => Promise.reject(json))
-        //   })
-        //   .then(({ url }) => {
-        //     window.location = url
-        //   })
-        //   .catch(e => {
-        //     console.error(e.error)
-        //   })
-    //   }
 
 
   return (
@@ -66,7 +61,7 @@ function App() {
                         </a>
                         <div className="hidden lg:flex lg:gap-10">
                             <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#features">
-                                <span className="relative z-10">{!data ? "Loading..." : data}</span>
+                                <span className="relative z-10">Men's Wear</span>
                             </a>
                             <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#reviews">
                                 <span className="relative z-10">Women's Wear</span>
@@ -90,7 +85,7 @@ function App() {
                         <div hidden="" ></div>
                         <a className="inline-flex justify-center rounded-lg border py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm outline-2 outline-offset-2 transition-colors border-gray-300 text-gray-700 hover:border-gray-400 active:bg-gray-100 active:text-gray-700/80 hidden lg:block" variant="outline" color="gray" href="/login">Log in</a>
                         <a className="inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block" variant="solid" color="gray" href="/">Login</a>
-                        <button  className="inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block" variant="solid" color="gray" >Checkout</button>
+                        <button onClick={handleCheckout} className="inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block" variant="solid" color="gray" >Checkout</button>
                     </div>
                 </div>
             </nav>
@@ -156,6 +151,19 @@ function App() {
                 </div>
             </div>
     </div>
+    <div>
+    <h1>Messages</h1>
+            <ul>
+                {persons.length === 0 ? (
+                    <li>No messages available</li>
+                ) : (
+                    persons.map((person, index) => (
+                        <li key={index}>{person.message}</li>
+                    ))
+                )}
+            </ul>
+        </div>
+        <PayPage/>
     </div>
   );
 }
