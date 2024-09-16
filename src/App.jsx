@@ -118,7 +118,7 @@ function handleCheckout() {
                             </div>
                             
                         </div>
-                        {/* <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
+                        <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
                             <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">As featured in</p>
                             <ul className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start">
                                 <li className="flex">
@@ -146,7 +146,7 @@ function handleCheckout() {
                                     <img alt="HuffPost" loading="lazy" width="142" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/huffpost.eeec742f.svg"/>
                                 </li>
                             </ul>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>
