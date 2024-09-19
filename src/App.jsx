@@ -145,6 +145,18 @@ function handleCheckout() {
                                 <li className="flex hidden xl:block">
                                     <img alt="HuffPost" loading="lazy" width="142" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/huffpost.eeec742f.svg"/>
                                 </li>
+                                <li className="flex">
+                                    <img alt="Fast Company" loading="lazy" width="124" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/fast-company.8fba32a5.svg"/>
+                                </li>
+                                <li className="flex hidden xl:block">
+                                    <img alt="HuffPost" loading="lazy" width="142" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/huffpost.eeec742f.svg"/>
+                                </li>
+                                <li className="flex">
+                                    <img alt="Fast Company" loading="lazy" width="124" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/fast-company.8fba32a5.svg"/>
+                                </li>
+                                <li className="flex hidden xl:block">
+                                    <img alt="HuffPost" loading="lazy" width="142" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/huffpost.eeec742f.svg"/>
+                                </li>
                             </ul>
                         </div>
                     </div>
