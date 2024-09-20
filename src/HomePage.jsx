@@ -15,7 +15,7 @@ export default function HomePage() {
             <div className=" shadow-2xl overflow-hidden py-5 sm:py-3 lg:pb-32 xl:pb-36">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
-                        <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
+                        <div className="relative z-1 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
                             <h1 className="text-4xl font-medium tracking-tight text-gray-900">Grow Comfort, Wear Change.</h1>
                             <p className="mt-6 text-lg text-gray-600">At Plant Hoodie, we create comfortable, eco-friendly hoodies made from sustainably sourced materials. With every purchase, you're helping support environmental initiatives like tree planting and waste reduction. Wear something that feels good and does good.</p>
                             {/* <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
@@ -123,7 +123,7 @@ export default function HomePage() {
                             <div className="relative flex flex-col mt-4">
                                 <div className="px-4 py-5 flex-auto">
                                     <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full ">
-                                    <FontAwesomeIcon icon="fa-brands fa-twitter" />
+                                    
                                     </div>
                                     <h6 className="text-xl mb-1 font-semibold">Eco-Friendly Materials</h6>
                                     <p className="mb-4 text-blueGray-500">Our hoodies are crafted from sustainably sourced, plant-based fibers, ensuring comfort and environmental responsibility.</p>
