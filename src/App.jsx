@@ -1,20 +1,25 @@
-import { useState, useEffect } from 'react';
-import axios from "axios"
+// import { useState, useEffect } from 'react';
+// import axios from "axios"
 import './App.css';
-import PayPage from "./PayPage"
+import { useState } from 'react';
 
 
 function App() {
-    const [persons, setPersons] = useState([]);
-    
-    function getPersons() {
-        axios.get(`${process.env.REACT_APP_BACKEND_URL}/messages`)
-        .then(response => {
-            setPersons(response.data)
-        })
-        .catch(error => console.error("Error fetching persons", error))
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    }
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+    // const [persons, setPersons] = useState([]);
+    
+    // function getPersons() {
+    //     axios.get(`${process.env.REACT_APP_BACKEND_URL}/messages`)
+    //     .then(response => {
+    //         setPersons(response.data)
+    //     })
+    //     .catch(error => console.error("Error fetching persons", error))
+
+    // }
 
 function handleCheckout() {
     fetch("http://localhost:3001/create-checkout-session", {
@@ -43,52 +48,102 @@ function handleCheckout() {
 
 }
 
-    useEffect(() => {
-        getPersons()
-    }, [] );
+    // useEffect(() => {
+    //     getPersons()
+    // }, [] );
 
 
 
   return (
     <div>
-      <header>
-            <nav>
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-50 flex justify-between py-8">
-                    <div className="relative z-10 flex items-center gap-16">
-                        <a aria-label="Home" href="/">
-                                <img alt='loogo' src="https://i.imgur.com/VEKlVcj.png" width="150vh" height="150vh"/>
-                            
-                        </a>
-                        <div className="hidden lg:flex lg:gap-10">
-                            <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#features">
-                                <span className="relative z-10">Men's Wear</span>
+            <header>
+                <nav>
+                    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-50 flex justify-between py-8">
+                        <div className="relative z-10 flex items-center gap-16">
+                            <a aria-label="Home" href="/">
+                                <img alt='logo' src="https://i.imgur.com/VEKlVcj.png" width="150" height="150"/>
                             </a>
-                            <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#reviews">
-                                <span className="relative z-10">Women's Wear</span>
-                            </a>
-                            <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#pricing">
-                                <span className="relative z-10">Sustainability</span>
-                            </a>
-                            <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#faqs">
-                                <span className="relative z-10">Contact</span>
-                            </a>
+                            {/* Desktop Navigation Links */}
+                            <div className="hidden lg:flex lg:gap-10">
+                                <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#features">
+                                    <span className="relative z-10">Men's Wear</span>
+                                </a>
+                                <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#reviews">
+                                    <span className="relative z-10">Women's Wear</span>
+                                </a>
+                                <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#pricing">
+                                    <span className="relative z-10">Sustainability</span>
+                                </a>
+                                <a className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-red-500 hover:delay-0" href="/#faqs">
+                                    <span className="relative z-10">Contact</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="flex items-center gap-6">
+                            {/* Mobile Menu Toggle Button */}
+                            <div className="lg:hidden">
+                                <button 
+                                    onClick={toggleMenu}
+                                    className="relative z-10 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 focus:outline-none" 
+                                    aria-label="Toggle site navigation" 
+                                    type="button" 
+                                    aria-expanded={isMenuOpen}
+                                >
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-6 w-6">
+                                        {isMenuOpen ? (
+                                            // Close (X) Icon
+                                            <path 
+                                                strokeLinecap="round" 
+                                                strokeLinejoin="round" 
+                                                strokeWidth="2" 
+                                                d="M6 18L18 6M6 6l12 12" 
+                                            />
+                                        ) : (
+                                            // Hamburger Icon
+                                            <path 
+                                                strokeLinecap="round" 
+                                                strokeLinejoin="round" 
+                                                strokeWidth="2" 
+                                                d="M4 6h16M4 12h16M4 18h16" 
+                                            />
+                                        )}
+                                    </svg>
+                                </button>
+                            </div>
+                            <div className="flex items-center gap-6">
+                                <a className="inline-flex justify-center rounded-lg border py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm outline-2 outline-offset-2 transition-colors border-gray-300 text-gray-700 hover:border-gray-400 active:bg-gray-100 active:text-gray-700/80 hidden lg:block" href="/login">Log in</a>
+                                <a className="inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block" href="/">Login</a>
+                                <button onClick={handleCheckout} className="inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:flex items-center">
+                                    {/* Shopping Cart Icon */}
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9v9m4-9v9m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3" />
+                                    </svg>
+                                    Checkout
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex items-center gap-6">
-                        <div className="lg:hidden" data-headlessui-state="">
-                            <button className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 ui-not-focus-visible:outline-none" aria-label="Toggle site navigation" type="button" aria-expanded="false" data-headlessui-state="">
-                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-6 w-6">    
-                                
-                                </svg>
-                            </button>
+                    {/* Mobile Navigation Menu */}
+                    {isMenuOpen && (
+                        <div className="lg:hidden bg-white shadow-md">
+                            <div className="px-2 pt-2 pb-3 space-y-1">
+                                <a href="/#features" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-500 hover:bg-gray-50">Men's Wear</a>
+                                <a href="/#reviews" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-500 hover:bg-gray-50">Women's Wear</a>
+                                <a href="/#pricing" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-500 hover:bg-gray-50">Sustainability</a>
+                                <a href="/#faqs" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-500 hover:bg-gray-50">Contact</a>
+                                {/* Mobile Login and Checkout Buttons */}
+                                <a href="/login" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-500 hover:bg-gray-50">Log in</a>
+                                <button onClick={handleCheckout} className="w-full flex items-center px-3 py-2 rounded-md text-base font-semibold text-white bg-gray-800 hover:bg-gray-900">
+                                    {/* Shopping Cart Icon */}
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9v9m4-9v9m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3" />
+                                    </svg>
+                                    Checkout
+                                </button>
+                            </div>
                         </div>
-                        <div hidden="" ></div>
-                        <a className="inline-flex justify-center rounded-lg border py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm outline-2 outline-offset-2 transition-colors border-gray-300 text-gray-700 hover:border-gray-400 active:bg-gray-100 active:text-gray-700/80 hidden lg:block" variant="outline" color="gray" href="/login">Log in</a>
-                        <a className="inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block" variant="solid" color="gray" href="/">Login</a>
-                        <button onClick={handleCheckout} className="inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block" variant="solid" color="gray" >Checkout</button>
-                    </div>
-                </div>
-            </nav>
+                    )}
+                </nav>
         </header>
         <div className="flex-auto">
             <div className="overflow-hidden py-5 sm:py-3 lg:pb-32 xl:pb-36">
@@ -114,70 +169,134 @@ function handleCheckout() {
                         </div>
                         <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
                             <div>
-                              <img alt='women' src='https://i.imgur.com/gz5keJE.png' />
+                                <img alt='women' src='https://i.imgur.com/wKDxRBG.png' />
                             </div>
                             
                         </div>
                         <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
                             <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">As featured in</p>
                             <ul className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start">
+                                
                                 <li className="flex">
-                                    <img alt="Forbes" loading="lazy" width="82" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/forbes.c4b4b0dd.svg"/> 
-                                </li>
-                                <li className="flex">
-                                    <img alt="TechCrunch" loading="lazy" width="181" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/techcrunch.fe121d74.svg"/>
+                                    <img alt="TechCrunch" className="h-16"  src="https://i.imgur.com/qU3Me19.png"/>
                                 </li>
                                 <li className="flex">
-                                    <img alt="Wired" loading="lazy" width="121" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/wired.42c588dc.svg"/>
+                                    <img alt="Wired" loading="lazy" width="121" height="32" src="https://i.imgur.com/8ZWNZLf.png"/>
                                 </li>
-                                <li className="flex hidden xl:block">
-                                    <img alt="CNN" loading="lazy" width="68" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/cnn.eaae184a.svg"/>
-                                </li>
-                                <li className="flex">
-                                    <img alt="BBC" loading="lazy" width="83" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/bbc.9cfc75a9.svg"/>
+                                {/* <li className="flex xl:block">
+                                    <img alt="CNN" loading="lazy" width="68" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="https://i.imgur.com/3K4nUGl.png"/>
                                 </li>
                                 <li className="flex">
-                                    <img alt="CBS" loading="lazy" width="101" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/cbs.aa596395.svg"/>
+                                    <img alt="BBC" loading="lazy" width="83" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="https://i.imgur.com/3K4nUGl.png"/>
+                                </li> */}
+                                <li className="flex">
+                                    <img alt="CBS" loading="lazy" width="101" height="32" src="https://i.imgur.com/gFJB8Li.png"/>
                                 </li>
                                 <li className="flex">
-                                    <img alt="Fast Company" loading="lazy" width="124" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/fast-company.8fba32a5.svg"/>
+                                    <img alt="Fast Company"  className="h-16"  src="https://i.imgur.com/3K4nUGl.png"/>
                                 </li>
-                                <li className="flex hidden xl:block">
+                                <li className="flex xl:block">
                                     <img alt="HuffPost" loading="lazy" width="142" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/huffpost.eeec742f.svg"/>
                                 </li>
                                 <li className="flex">
                                     <img alt="Fast Company" loading="lazy" width="124" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/fast-company.8fba32a5.svg"/>
                                 </li>
-                                <li className="flex hidden xl:block">
-                                    <img alt="HuffPost" loading="lazy" width="142" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/huffpost.eeec742f.svg"/>
-                                </li>
-                                <li className="flex">
-                                    <img alt="Fast Company" loading="lazy" width="124" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/fast-company.8fba32a5.svg"/>
-                                </li>
-                                <li className="flex hidden xl:block">
-                                    <img alt="HuffPost" loading="lazy" width="142" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="/_next/static/media/huffpost.eeec742f.svg"/>
-                                </li>
+                            
+                                
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
     </div>
-    <div>
-    <h1>Messages</h1>
-            <ul>
-                {persons.length === 0 ? (
-                    <li>No messages available</li>
-                ) : (
-                    persons.map((person, index) => (
-                        <li key={index}>{person.message}</li>
-                    ))
-                )}
-            </ul>
-        </div>
-        <PayPage/>
-    </div>
-  );
+                {/* <div>
+                <h1>Messages</h1>
+                        <ul>
+                            {persons.length === 0 ? (
+                                <li>No messages available</li>
+                            ) : (
+                                persons.map((person, index) => (
+                                    <li key={index}>{person.message}</li>
+                                ))
+                            )}
+                        </ul>
+                    </div> */}
+        <section className="mt-40 pb-40 relative bg-gray-100">
+            <div className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute" style={{height:"80px"}}>
+                <svg className="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon className=" text-gray-100 fill-current"  points="2560 0 2560 100 0 100">
+                    </polygon>
+                </svg>
+            </div>
+            <div className="container mx-auto">
+                <div className="flex flex-wrap items-center">
+                    <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
+                        <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-green-100">
+                            <img alt="..." src="https://i.imgur.com/M7O6jGh.jpeg-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" className="w-full align-middle rounded-t-lg"/>
+                            <blockquote className="relative p-8 mb-4">
+                                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute left-0 w-full block" style={{height:"95px", top:"-94px"}}>
+                                    <polygon points="-30,95 583,95 583,65" className="text-green-100 fill-current">
+                                    </polygon>
+                                </svg>
+                                <h4 className="text-xl font-bold text-black">Perfect for Your Sustainable Wardrobe</h4>
+                                <p className="text-md font-light mt-2 text-black">Creating your eco-friendly wardrobe has never been easier. Mix and match from our thoughtfully designed collections. From casual styles to cozy essentials, you can easily find and customize your perfect hoodie for any occasion.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                <div className="w-full md:w-6/12 px-4">
+                    <div className="flex flex-wrap">
+                        <div className="w-full md:w-6/12 px-4">
+                            <div className="relative flex flex-col mt-4">
+                                <div className="px-4 py-5 flex-auto">
+                                    <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                                        <i className="fas fa-sitemap">
+                                        </i>
+                                    </div>
+                                    <h6 className="text-xl mb-1 font-semibold">Eco-Friendly Materials</h6>
+                                    <p className="mb-4 text-blueGray-500">Our hoodies are crafted from sustainably sourced, plant-based fibers, ensuring comfort and environmental responsibility.</p>
+                                </div>
+                            </div>
+                            <div className="relative flex flex-col min-w-0">
+                                <div className="px-4 py-5 flex-auto">
+                                    <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                                        <i className="fas fa-drafting-compass">
+                                        </i>
+                                    </div>
+                                    <h6 className="text-xl mb-1 font-semibold">Innovative Designs</h6>
+                                    <p className="mb-4 text-blueGray-500">Discover our collection of stylish and functional hoodies that feature eco-conscious designs perfect for any occasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full md:w-6/12 px-4">
+                            <div className="relative flex flex-col min-w-0 mt-4">
+                                <div className="px-4 py-5 flex-auto">
+                                    <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                                    <i className="fas fa-newspaper">
+                                    </i>
+                                    </div>
+                                    <h6 className="text-xl mb-1 font-semibold">Shop Our Collection</h6>
+                                    <p className="mb-4 text-blueGray-500">Explore our fully curated collection with detailed descriptions, so you can find the perfect hoodie that aligns with your values.</p>
+                                </div>
+                            </div>
+                            <div className="relative flex flex-col min-w-0">
+                                <div className="px-4 py-5 flex-auto">
+                                    <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                                    <i className="fas fa-file-alt">
+                                    </i>
+                                    </div>
+                                    <h6 className="text-xl mb-1 font-semibold">Sustainability Promise</h6>
+                                    <p className="mb-4 text-blueGray-500">Designed by eco-conscious innovators for nature lovers. You'll love how easy it is to embrace sustainability with our plant-based hoodie collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div> 
+    </section >
+</div>
+
+);
 }
 
 export default App;
