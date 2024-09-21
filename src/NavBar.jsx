@@ -110,7 +110,7 @@ export default function NavBar() {
                                 Checkout
                                 
                             </button>
-                            <div className='rounded-full flex justify-center items-center bg-red-500 ' style={{width: '3.5rm'}}>2</div>
+                            {/* <div className='rounded-full flex justify-center items-center bg-red-500 ' style={{width: '3.5rm'}}>2</div> */}
                             
                             
                         </div>
