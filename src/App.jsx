@@ -8,8 +8,10 @@ import ContactUsPage from './ContactUsPage';
 import SustainabilityPage from './SustainabilityPage';
 import PlantHoodiePage from './PlantHoodiePage';
 import Footer from './Footer';
+import Carousel from './Carousel';
 
 function App() {  
+
     // const [persons, setPersons] = useState([]);
     
     // function getPersons() {
@@ -31,7 +33,10 @@ function App() {
             <Route path="/sustainability" element={ <SustainabilityPage/>}/>
             <Route path="/planthoodie" element={ <PlantHoodiePage/>}/>
         </Routes>
+        <Carousel/>
         <Footer/>
+        
+        
     </div>
 
 );

@@ -48,11 +48,11 @@ export default function NavBar() {
         
         <div>
             
-            <nav>
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-1 flex justify-between py-8">
+            <nav className=''>
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-1 flex justify-between py-8 mb-10">
                     <div className="relative z-1 flex items-center gap-16">
                         <Link as={Link} to="/" aria-label="Home">
-                            <img alt='logo' src="https://i.imgur.com/VEKlVcj.png" width="150" height="150" />
+                            <img alt='logo' src="https://i.imgur.com/VEKlVcj.png" className='w-[80px] h-[80px] lg:w-[150px] lg:h-[150px]' />
                         </Link>
                         {/* Desktop Navigation Links */}
                         <div className="hidden lg:flex lg:gap-10">
