@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import men1 from './images/men1.png'
+import women1 from './images/women1.png'
 
 export default function HomePage() {
   return (
@@ -35,7 +37,7 @@ export default function HomePage() {
                         </div>
                         <div  className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
                             <div >
-                                <Link to='/planthoodie'><img alt='women' src='https://i.imgur.com/wKDxRBG.png' /></Link>
+                                <Link to='/planthoodie'><img className='rounded-lg' alt='women' src={women1}/></Link>
                             </div>
                             
                         </div>
@@ -44,10 +46,10 @@ export default function HomePage() {
                             <ul className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start">
                                 
                                 <li className="flex">
-                                    <img alt="TechCrunch" className="h-16"  src="https://i.imgur.com/qcCoKDz.png"/>
+                                    <img alt="TechCrunch" className="h-16"  src=""/>
                                 </li>
                                 <li className="flex">
-                                    <img alt="Wired" loading="lazy" width="121" height="32" src="https://i.imgur.com/8ZWNZLf.png"/>
+                                    <img alt="Wired" loading="lazy" width="121" height="32" src=""/>
                                 </li>
                                 {/* <li className="flex xl:block">
                                     <img alt="CNN" loading="lazy" width="68" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="https://i.imgur.com/3K4nUGl.png"/>
@@ -56,16 +58,16 @@ export default function HomePage() {
                                     <img alt="BBC" loading="lazy" width="83" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="https://i.imgur.com/3K4nUGl.png"/>
                                 </li> */}
                                 <li className="flex">
-                                    <img alt="CBS" loading="lazy" width="101" height="32" src="https://i.imgur.com/gFJB8Li.png"/>
+                                    <img alt="CBS" loading="lazy" width="101" height="32" src=""/>
                                 </li>
                                 <li className="flex">
-                                    <img alt="Fast Company"  className="h-16"  src="https://i.imgur.com/3K4nUGl.png"/>
+                                    <img alt="Fast Company"  className="h-16"  src=""/>
                                 </li>
                                 <li className="flex xl:block">
-                                    <img alt="HuffPost" loading="lazy" width="142" height="32"   src="https://i.imgur.com/zYbUOT4.png"/>
+                                    <img alt="HuffPost" loading="lazy" width="142" height="32"   src=""/>
                                 </li>
                                 <li className="flex">
-                                    <img alt="Fast Company" loading="lazy" width="124" height="32" src="https://i.imgur.com/4Th0vgm.png"/>
+                                    <img alt="Fast Company" loading="lazy" width="124" height="32" src=""/>
                                 </li>
                             
                                 
@@ -103,95 +105,69 @@ export default function HomePage() {
                 </svg>
             </div>
             <div className="container mx-auto">
-  <div className="flex items-center">
-    {/* Left Section with Image and Text */}
-    <div className="min-[320px]:w-6/12  md:w-6/12 lg:w-4/12 px-4 mt-6">
-      <div className="relative flex flex-col min-w-0 break-words mb-6 shadow-2xl rounded-lg bg-green-100 ">
-        {/* Image that scales responsively */}
-        <img
-          alt="..."
-          src="https://i.imgur.com/M7O6jGh.jpeg"
-          className="w-full h-auto align-middle rounded-t-lg "
-        />
-        {/* Text block that scales */}
-        <blockquote className="relative p-4 md:p-6">
-          <svg
-            preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 583 95"
-            className="absolute left-0 w-full block"
-            style={{ height: "65px", top: "-64px" }}
-          >
-            <polygon points="-30,95 583,95 583,65" className="text-green-100 fill-current"></polygon>
-          </svg>
-          <h4 className="text-lg min-[320px]::text-xl font-bold text-black">Perfect for Your Sustainable Wardrobe</h4>
-          <p className="text-sm min-[320px]::text-md font-light mt-2 text-black">
-            Creating your eco-friendly wardrobe has never been easier. Mix and match from our thoughtfully designed collections. From casual styles to cozy essentials, you can easily find and customize your perfect hoodie for any occasion.
-          </p>
-        </blockquote>
-      </div>
-    </div>
-
-    {/* Right Section with Features */}
-    <div className="w-full py-5 md:w-6/12 px-4">
-      <div className="flex flex-wrap">
-        {/* Feature Column 1 */}
-        <div className="w-full md:w-6/12 px-4">
-          <div className="relative flex flex-col mt-4">
-            <div className="px-4 py-5 flex-auto">
-              <div className="p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                {/* Icon here */}
-              </div>
-              <h6 className="text-md md:text-xl mb-1 font-semibold">Eco-Friendly Materials</h6>
-              <p className="mb-4 text-sm md:text-base text-blueGray-500">
-                Our hoodies are crafted from sustainably sourced, plant-based fibers, ensuring comfort and environmental responsibility.
-              </p>
-            </div>
-          </div>
-          <div className="relative flex flex-col">
-            <div className="px-4 py-5 flex-auto">
-              <div className="p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                <i className="fas fa-drafting-compass"></i>
-              </div>
-              <h6 className="text-md md:text-xl mb-1 font-semibold">Innovative Designs</h6>
-              <p className="mb-4 text-sm md:text-base text-blueGray-500">
-                Discover our collection of stylish and functional hoodies that feature eco-conscious designs perfect for any occasion.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Feature Column 2 */}
-        <div className="w-full md:w-6/12 px-4">
-          <div className="relative flex flex-col mt-4">
-            <div className="px-4 py-5 flex-auto">
-              <div className="p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                <i className="fas fa-newspaper"></i>
-              </div>
-              <h6 className="text-md md:text-xl mb-1 font-semibold">Shop Our Collection</h6>
-              <p className="mb-4 text-sm md:text-base text-blueGray-500">
-                Explore our fully curated collection with detailed descriptions, so you can find the perfect hoodie that aligns with your values.
-              </p>
-            </div>
-          </div>
-          <div className="relative flex flex-col">
-            <div className="px-4 py-5 flex-auto">
-              <div className="p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                <i className="fas fa-file-alt"></i>
-              </div>
-              <h6 className="text-md md:text-xl mb-1 font-semibold">Sustainability Promise</h6>
-              <p className="mb-4 text-sm md:text-base text-blueGray-500">
-                Designed by eco-conscious innovators for nature lovers. You'll love how easy it is to embrace sustainability with our plant-based hoodie collection.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-   
-        
+                <div className="flex flex-wrap items-center">
+                    <div className="w-12/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
+                        <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-2xl rounded-lg bg-green-100">
+                            <img alt="..." src={men1} className="w-full align-middle rounded-t-lg"/>
+                            <blockquote className="relative p-8 mb-4">
+                                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute left-0 w-full block" style={{height:"95px", top:"-94px"}}>
+                                    <polygon points="-30,95 583,95 583,65" className="text-green-100 fill-current">
+                                    </polygon>
+                                </svg>
+                                <h4 className="text-xl font-bold text-black">Perfect for Your Sustainable Wardrobe</h4>
+                                <p className="text-md font-light mt-2 text-black">Creating your eco-friendly wardrobe has never been easier. Mix and match from our thoughtfully designed collections. From casual styles to cozy essentials, you can easily find and customize your perfect hoodie for any occasion.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                <div className="w-full md:w-6/12 px-4">
+                    <div className=" flex flex-wrap">
+                        <div className=" w-full md:w-6/12 px-4">
+                            <div className="relative flex flex-col mt-4">
+                                <div className="px-4 py-5 flex-auto">
+                                    <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg  bg-white">
+                                    
+                                    </div>
+                                    <h6 className="text-xl mb-1 font-semibold">Eco-Friendly Materials</h6>
+                                    <p className="mb-4 text-blueGray-500">Our hoodies are crafted from sustainably sourced, plant-based fibers, ensuring comfort and environmental responsibility.</p>
+                                </div>
+                            </div>
+                            <div className="relative flex flex-col min-w-0">
+                                <div className="px-4 py-5 flex-auto">
+                                    <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                                        <i className="fas fa-drafting-compass">
+                                        </i>
+                                    </div>
+                                    <h6 className="text-xl mb-1 font-semibold">Innovative Designs</h6>
+                                    <p className="mb-4 text-blueGray-500">Discover our collection of stylish and functional hoodies that feature eco-conscious designs perfect for any occasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full md:w-6/12 px-4">
+                            <div className="relative flex flex-col min-w-0 mt-4">
+                                <div className="px-4 py-5 flex-auto">
+                                    <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg  bg-white">
+                                    <i className="fas fa-newspaper">
+                                    </i>
+                                    </div>
+                                    <h6 className="text-xl mb-1 font-semibold">Shop Our Collection</h6>
+                                    <p className="mb-4 text-blueGray-500">Explore our fully curated collection with detailed descriptions, so you can find the perfect hoodie that aligns with your values.</p>
+                                </div>
+                            </div>
+                            <div className="relative flex flex-col min-w-0">
+                                <div className="px-4 py-5 flex-auto">
+                                    <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                                    <i className="fas fa-file-alt">
+                                    </i>
+                                    </div>
+                                    <h6 className="text-xl mb-1 font-semibold">Sustainability Promise</h6>
+                                    <p className="mb-4 text-blueGray-500">Designed by eco-conscious innovators for nature lovers. You'll love how easy it is to embrace sustainability with our plant-based hoodie collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div> 
     </section >
 </>
 )

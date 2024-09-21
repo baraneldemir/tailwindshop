@@ -5,39 +5,43 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FreeMode, Pagination } from "swiper/modules";
 import { RxHeart } from "react-icons/rx";
-
+import men1 from './images/men1.png'
+import women1 from './images/women1.png'
+import women2 from './images/women2.png'
+import women3 from './images/women3.png'
+import women4 from './images/women4.png'
 export default function Carousel() {
 
     const slides = [
         {
           title: "Product Brown",
           content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
-          backgroundImage: "https://i.imgur.com/wKDxRBG.png",
+          backgroundImage: women1 ,
         },
         {
           title: "Product Red",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: "https://i.imgur.com/wKDxRBG.png",
+          backgroundImage: women2,
         },
         {
           title: "Design",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: "https://i.imgur.com/wKDxRBG.png",
+          backgroundImage: women4,
         },
         {
           title: "Seo",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage:"https://i.imgur.com/wKDxRBG.png",
+          backgroundImage: men1,
         },
         {
           title: "Management",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: "https://i.imgur.com/wKDxRBG.png",
+          backgroundImage: women3,
         },
         {
           title: "Production",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: "https://i.imgur.com/wKDxRBG.png",
+          backgroundImage: women4,
         },
     ];
 
@@ -67,14 +71,14 @@ export default function Carousel() {
             <div className="flex-col gap-6 group relative shadow-lg mb-10 text-black  px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer">
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${item.backgroundImage})` }}
+                style={{ backgroundImage: item.backgroundImage}}
               />
               {/* <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" /> */}
               <div className="relative flex flex-col gap-3">
                 <h1 className="text-xl lg:text-2xl">{item.title} </h1>
                 {/* <p className="lg:text-[18px]">{item.content} </p> */}
               </div>
-              <RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-emerald-200 group-hover:rotate-45 duration-100" />
+              <RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-red-700 group-hover:rotate-180 duration-700" />
             </div>
           </SwiperSlide>
         ))}

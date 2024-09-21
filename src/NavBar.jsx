@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from './images/logo.png'
+import cartlogo from './images/cartlogo.png'
 
 export default function NavBar() {
 
@@ -52,7 +54,7 @@ export default function NavBar() {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-1 flex justify-between py-8 mb-10">
                     <div className="relative z-1 flex items-center gap-16">
                         <Link as={Link} to="/" aria-label="Home">
-                            <img alt='logo' src="https://i.imgur.com/VEKlVcj.png" className='w-[80px] h-[80px] lg:w-[150px] lg:h-[150px]' />
+                            <img alt='logo' src={logo} className='w-[80px] h-[80px] lg:w-[150px] lg:h-[150px]' />
                         </Link>
                         {/* Desktop Navigation Links */}
                         <div className="hidden lg:flex lg:gap-10">
@@ -101,12 +103,16 @@ export default function NavBar() {
                             </button>
                         </div>
                         <div className="flex items-center gap-6">         
-                            <a className=" justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block" href="/">Login</a>
+                            <Link className=" justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block" to="/">Login</Link>
                             <button onClick={toggleSide} className="justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-emerald-200 hidden lg:flex items-center">
                                 {/* Shopping Cart Icon */}
-                                <img style={{height: '2.5vh'}} className="pr-3" src='https://cdn-icons-png.flaticon.com/512/468/468209.png' alt='cart'></img>
+                                <img style={{height: '2.5vh'}} className="pr-3" src={cartlogo}alt='cart'></img>
                                 Checkout
+                                
                             </button>
+                            <div className='rounded-full flex justify-center items-center bg-red-500 ' style={{width: '3.5rm'}}>2</div>
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -124,6 +130,7 @@ export default function NavBar() {
                                 <img style={{height: '3vh'}} className="pr-3" src="https://cdn-icons-png.flaticon.com/512/468/468209.png" alt="..." />
                                 Checkout
                             </button>
+                            
                         </div>
                     </div>
                 )}
