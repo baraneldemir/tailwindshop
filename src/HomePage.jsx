@@ -6,7 +6,7 @@ import ecosia from './images/ecosia.png'
 import ecosia2 from './images/ecosia2.png'
 import ecosia3 from './images/ecosia3.png'
 import ecosia4 from './images/ecosia4.png'
-import ecosia5 from './images/ecosia5.png'
+// import ecosia5 from './images/ecosia5.png'
 import ecosia6 from './images/ecosia6.png'
 // import bej from './images/bejkiyafet.png'
 import bej2 from './images/beyazkiyafet.png'
@@ -15,7 +15,7 @@ import bej4 from './images/girlplant.png'
 // import bej5 from './images/global.png'
 // import bej6 from './images/kiyafet.png'
 // import bej7 from './images/kiyafet3.png'
-// import bej8 from './images/mountains.png'
+import bej8 from './images/mountains.png'
 import bej9 from './images/World.png'
 // import bej10 from './images/worldreal.png'
 
@@ -67,7 +67,7 @@ export default function HomePage() {
                             </div>
                             <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
                                 {/* <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">Partners</p> */}
-                                <ul className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start">
+                                <ul className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-7 gap-y-8 lg:mx-0 lg:justify-start">
 
                                     <li className="flex">
                                         <img alt="TechCrunch" className="h-16" src={ecosia} />
@@ -87,9 +87,9 @@ export default function HomePage() {
                                     <li className="flex">
                                         <img alt="Fast Company" className="h-16" src={ecosia4} />
                                     </li>
-                                    <li className="flex">
+                                    {/* <li className="flex">
                                         <img alt="HuffPost" loading="lazy" width="142" height="32" src={ecosia5} />
-                                    </li>
+                                    </li> */}
                                     <li className="flex">
                                         <img alt="Fast Company" loading="lazy" width="124" height="32" src={ecosia6} />
                                     </li>
@@ -132,7 +132,7 @@ export default function HomePage() {
                     <div className="flex flex-wrap items-center">
                         <div className="w-12/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
                             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-2xl rounded-lg bg-green-100">
-                                <img alt="..." src={women1} className="w-full align-middle rounded-t-lg" />
+                                <img alt="..." src={bej8} className="w-full align-middle rounded-t-lg" />
                                 <blockquote className="relative p-8 mb-4">
                                     <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute left-0 w-full block" style={{ height: "95px", top: "-94px" }}>
                                         <polygon points="-30,95 583,95 583,65" className="text-green-100 fill-current">
