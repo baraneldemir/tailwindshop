@@ -54,9 +54,11 @@ export default function NavBar() {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-1 flex justify-between py-8 mb-10">
                     <div className="relative z-1 flex items-center gap-16">
                         <Link as={Link} to="/" aria-label="Home">
-                            <img alt='logo' src={logo} className='w-[80px] h-[80px] lg:w-[150px] lg:h-[150px]' />
+                            <img alt='logo' src={logo} className='min-w-[80px] h-[80px] lg:w-[150px] lg:min-h-[150px]' />
                         </Link>
+                        
                         {/* Desktop Navigation Links */}
+                        
                         <div className="hidden lg:flex lg:gap-10">
                             <Link as={Link} to="/planthoodie" className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-emerald-50 hover:delay-0">
                                 <span className="relative z-1">Plant Hoodie</span>
@@ -71,9 +73,11 @@ export default function NavBar() {
                         </div>
 
                     </div>
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-6 w-full lg:w-auto">
                         {/* Mobile Menu Toggle Button */}
+                        <h1 className="lg:hidden w-11/12 text-center lg:w-auto lg:text-left" >Plant</h1>
                         <div className="lg:hidden">
+                            
                             <button
                                 onClick={toggleMenu}
                                 className="relative z-1 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 focus:outline-none"
@@ -103,7 +107,7 @@ export default function NavBar() {
                             </button>
                         </div>
                         <div className="flex items-center gap-6">         
-                            <Link className=" justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-gray-900 active:bg-gray-800 active:text-white/80 hidden lg:block" to="/">Login</Link>
+                            <Link className=" justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-emerald-200 active:bg-gray-800 active:text-white/80 hidden lg:block" to="/">Login</Link>
                             <button onClick={toggleSide} className="justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-emerald-200 hidden lg:flex items-center">
                                 {/* Shopping Cart Icon */}
                                 <img style={{height: '2.5vh'}} className="pr-3" src={cartlogo}alt='cart'></img>
@@ -118,7 +122,7 @@ export default function NavBar() {
                 </div>
                 {/* Mobile Navigation Menu */}
                 {isMenuOpen && (
-                    <div className="lg:hidden bg-white shadow-md mb-20">
+                    <div className="-mt-10 lg:hidden bg-white shadow-md mb-20">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Plant Hoodie</Link>  
                             <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Sustainability</Link>
