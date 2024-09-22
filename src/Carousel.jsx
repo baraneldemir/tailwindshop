@@ -5,21 +5,21 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import { RxHeart } from "react-icons/rx";
-import men1 from './images/men1.png'
+// import men1 from './images/men1.png'
 import women1 from './images/women1.png'
 import women2 from './images/women2.png'
 import women3 from './images/women3.png'
-import women4 from './images/women4.png'
-import bej from './images/bejkiyafet.png'
+// import women4 from './images/women4.png'
+// import bej from './images/bejkiyafet.png'
 import bej2 from './images/beyazkiyafet.png'
-import bej3 from './images/clothes.png'
-import bej4 from './images/girlplant.png'
+// import bej3 from './images/clothes.png'
+// import bej4 from './images/girlplant.png'
 import bej5 from './images/global.png'
 import bej6 from './images/kiyafet.png'
-import bej7 from './images/kiyafet3.png'
-import bej8 from './images/mountains.png'
-import bej9 from './images/World.png'
-import bej10 from './images/worldreal.png'
+// import bej7 from './images/kiyafet3.png'
+// import bej8 from './images/mountains.png'
+// import bej9 from './images/World.png'
+// import bej10 from './images/worldreal.png'
 
 export default function Carousel() {
   
