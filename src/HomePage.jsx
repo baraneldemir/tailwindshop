@@ -18,7 +18,7 @@ import bej4 from './images/girlplant.png'
 import bej8 from './images/mountains.png'
 import bej9 from './images/World.png'
 // import bej10 from './images/worldreal.png'
-
+import Carousel from './Carousel'
 
 
 
@@ -203,6 +203,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section >
+            <Carousel/>
         </>
     )
 }
