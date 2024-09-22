@@ -56,11 +56,12 @@ export default function HomePage() {
                             </div>
                             <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 ">
                                 <div className='relative'>
-                                    <Link to='/planthoodie'><img className='rounded-lg' alt='women' src={women1} /></Link>
-                                    <div className="mb-20 absolute bottom-0 left-0 right-0 flex flex-col marker:justify-center items-center text-white py-2">
-                                        <span className="text-3xl font-bold mb-2">Give your friends a new purpose</span>
-                                        <button className="px-5 py-2 text-lg font-bold border-2 rounded-xl hover:bg-pink-400 duration-500 bg-opacity-50 bg-black ">Shop Now!</button>
+                                    <Link to='/'><img className='rounded-lg' alt='women' src={women1} /></Link>
+                                    <div className="absolute inset-0 flex flex-col justify-center items-center text-white py-2">
+                                        <span className="text-lg md:text-2xl font-bold text-center">Give your friends a new purpose</span>
+                                        <button className="px-5 py-2 text-sm md:text-lg font-bold border-2 md:mt-2 rounded-xl hover:bg-pink-400 duration-500 bg-opacity-50 bg-black ">Shop Now!</button>
                                     </div>
+                                    
                                 </div>
 
                             </div>

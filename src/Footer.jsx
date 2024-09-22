@@ -20,15 +20,15 @@ export default function Footer() {
                 <i className="fab fa-twitter bg-white text-lightBlue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
                 </i>
               </a>
-              <a href="https://www.facebook.com/creativetim" >
+              <a href="https://www.twitter.com" >
                 <i className="fab fa-facebook bg-white text-blue-600  font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
                 </i>
               </a>
-              <a href="https://www.dribbble.com/creativetim" >
+              <a href="https://www.twitter.com/creativetim" >
                 <i className="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
                 </i>
               </a>
-              <a href="https://www.github.com/creativetimofficial" >
+              <a href="https://www.github.com" >
                 <i className="fab fa-github bg-white text-blueGray-800 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
                 </i>
               </a>
@@ -67,7 +67,7 @@ export default function Footer() {
                     <Link className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Intellectual Property Rights</Link>
+                    <Link to='/contactus'className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Intellectual Property Rights</Link>
                   </li>
                 </ul>
               </div>

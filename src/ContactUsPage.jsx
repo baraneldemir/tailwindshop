@@ -12,11 +12,10 @@ export default function ContactUsPage() {
               <h2
                 class="text-dark dark:text-white mb-4 text-3xl font-bold sm:text-[40px]/[48px]"
               >
-                Any Questions? Look Here
+                I Love you rosie ehehe
               </h2>
               <p class="text-base text-body-color dark:text-dark-6">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
+                
               </p>
             </div>
           </div>
