@@ -22,6 +22,7 @@ import bej9 from './images/World.png'
 import bej10 from './images/worldreal.png'
 
 export default function Carousel() {
+  
 
     const slides = [
         {
@@ -59,10 +60,12 @@ export default function Carousel() {
   return (
     <div className="mb-20 flex items-center justify-center flex-col h-[350px] lg:h-[500px] bg-emerald-50">
       <Swiper
+        loop={true}
         breakpoints={{
           340: {
             slidesPerView: 2,
             spaceBetween: 15,
+            
           },
           700: {
             slidesPerView: 3,
@@ -70,6 +73,7 @@ export default function Carousel() {
           },
         }}
         freeMode={true}
+        
         pagination={{
           clickable: true,
         }}
@@ -79,7 +83,7 @@ export default function Carousel() {
       >
         {slides.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className="flex-col gap-6 group relative shadow-lg mb-10 text-emerald-600  px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[370px] md:mt-5 overflow-hidden cursor-pointer">
+            <div className="flex-col gap-6 relative shadow-lg mb-10 text-emerald-600  px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[370px] md:mt-5 overflow-hidden ">
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${item.backgroundImage})`}}
@@ -89,7 +93,7 @@ export default function Carousel() {
                 <h1 className="text-xl lg:text-sm ">{item.title} </h1>
                 {/* <p className="lg:text-[18px]">{item.content} </p> */}
               </div>
-              <RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-red-700 group-hover:rotate-180 duration-700" />
+              <RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" />
             </div>
           </SwiperSlide>
         ))}
@@ -97,9 +101,9 @@ export default function Carousel() {
       <style>
         {`
           .swiper-button-next, .swiper-button-prev {
-            color: white; /* Set arrow color to white */
-            width: 30px; /* Adjust width */
-            height: 30px; /* Adjust height */
+            color: white;
+            width: 30px; 
+            height: 30px;
           }
         `}
       </style>
