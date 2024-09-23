@@ -3,7 +3,7 @@ import { useShoppingCart } from './context/ShoppingCartContext'
 
 export default function StoreItem({ id, name, price, imgUrl }) {
 
-    const { getItemQuantity, increaseCartQuantity} = useShoppingCart()
+    const { increaseCartQuantity} = useShoppingCart()
     // const quantity = getItemQuantity(id)
 
     return (
