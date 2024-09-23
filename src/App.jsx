@@ -8,6 +8,7 @@ import ContactUsPage from './ContactUsPage';
 import SustainabilityPage from './SustainabilityPage';
 import PlantHoodiePage from './PlantHoodiePage';
 import Footer from './Footer';
+import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 
 function App() {  
@@ -25,7 +26,7 @@ function App() {
     //     getPersons()
     // }, [] );
   return (
-    <div>
+    <ShoppingCartProvider>
         <NavBar/>
         <Routes>
             <Route path="/" element={ <HomePage/>}/>
@@ -36,7 +37,7 @@ function App() {
         <Footer/>
         
         
-    </div>
+    </ShoppingCartProvider>
 
 );
 }

@@ -1,0 +1,27 @@
+[
+    {
+    "id": 1,
+    "name": "Green Plant Hoodie",
+    "price": 39.99,
+    "imgUrl": "/images/hoodie4.png"
+    },
+    {
+    "id": 2,
+    "name": "Green Hoodie",
+    "price": 39.99,
+    "imgUrl": "/images/hoodie.png"
+    },
+    {
+    "id": 2,
+    "name": "White Hoodie",
+    "price": 39.99,
+    "imgUrl": "/images/hoodie3.png"
+    },
+    {
+    "id": 2,
+    "name": "Brownish Hoodie",
+    "price": 29.99,
+    "imgUrl": "/images/hoodie2.png"
+    }
+    
+]
