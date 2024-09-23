@@ -123,7 +123,7 @@ export default function NavBar() {
                     <div className="-mt-10 lg:hidden bg-white shadow-md mb-20">
                         
                         <div className="px-2 pt-2 pb-3 space-y-1">
-                            <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Plant Products</Link>  
+                            <Link to="/planthoodie" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Plant Products</Link>  
                             <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Sustainability</Link>
                             <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Contact</Link>
                             {/* Mobile Login and Checkout Buttons */}
