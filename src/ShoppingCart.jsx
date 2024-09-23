@@ -1,44 +1,44 @@
 import React from 'react'
 import { useShoppingCart } from './context/ShoppingCartContext'
 import CartItem from './CartItem'
-import storeItems from "./data/data.json"
+// import storeItems from "./data/data.json"
 
-export default function ShoppingCart({ isSideOpen, id, quantity}) {
+export default function ShoppingCart({ isSideOpen}) {
 
    
     const { cartItems } = useShoppingCart()
-    const item = storeItems.find(i => i.id === id)
-    if ( item == null) return null
+    // const item = storeItems.find(i => i.id === id)
+    // if ( item == null) return null
 
-    const items = cartItems.map(item => ({
-        id: id,
-        quantity: quantity
-    }));
+    // const items = cartItems.map(item => ({
+    //     id: id,
+    //     quantity: quantity
+    // }));
 
-    function handleCheckout(id, quantity) {
-        fetch("http://localhost:3001/create-checkout-session", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                items: items,
-            }),
-        })
-            .then(res => {
-                if (res.ok) return res.json()
-                return res.json().then(json => Promise.reject(json))
-            })
-            console.log()
-            .then(({ url }) => {
-                window.location = url
+    // function handleCheckout() {
+    //     fetch("http://localhost:3001/create-checkout-session", {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type": "application/json",
+    //         },
+    //         body: JSON.stringify({
+    //             items: items,
+    //         }),
+    //     })
+    //         .then(res => {
+    //             if (res.ok) return res.json()
+    //             return res.json().then(json => Promise.reject(json))
+    //         })
+    //         console.log()
+    //         .then(({ url }) => {
+    //             window.location = url
 
-            })
-            .catch(e => {
-                console.error(e.error)
-            })
+    //         })
+    //         .catch(e => {
+    //             console.error(e.error)
+    //         })
 
-    }
+    // }
     return (
         <>
         <div className={`top-0 right-0 fixed bg-emerald-200 w-[90vw] h-full z-10 p-10 flex flex-col sm:w-[90vw] lg:w-[35vw] transition-all duration-300 ease-in-out ${isSideOpen ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-300`}>
@@ -68,7 +68,7 @@ export default function ShoppingCart({ isSideOpen, id, quantity}) {
                 <div className='mb-10'>
                     {/* {`Your cart is empty :(`} */}
                 </div>
-                <button onClick={handleCheckout} className='border-2 border-white px-4 py-2'>Go to Checkout</button>
+                <button  className='border-2 border-white px-4 py-2'>Go to Checkout</button>
             </div>
 
 
