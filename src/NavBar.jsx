@@ -25,7 +25,7 @@ export default function NavBar() {
     return (
         <>
         
-        <div>
+        <div  className='sticky top-0 z-15 '>
             
             <nav>
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-1 flex justify-between py-8 mb-10">
