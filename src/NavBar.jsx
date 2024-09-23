@@ -60,7 +60,7 @@ export default function NavBar() {
                                 {/* Shopping Cart Icon */}
                                 <img  className="pr-3 min-h-6 max-h-6 min-w-9" src={cartlogo}alt='cart'></img>
                                 
-                            <div className='rounded-full flex justify-center items-center bg-red-500 text-white -bottom-2 -left-2' style={{width: '1.5rem', height: '1.5rem', position: 'absolute'}}>{cartQuantity}</div>
+                            <div className='rounded-full flex justify-center items-center bg-emerald-400 text-white -bottom-2 -left-2' style={{width: '1.5rem', height: '1.5rem', position: 'absolute'}}>{cartQuantity}</div>
                             </button>
                                 
                             
@@ -109,7 +109,7 @@ export default function NavBar() {
                                 {/* Shopping Cart Icon */}
                                 <img style={{height: '2.5vh'}} className="pr-3" src={cartlogo}alt='cart'></img>
                                 Checkout
-                            <div className='rounded-full flex justify-center items-center bg-red-500 text-white -bottom-2 -left-2' style={{width: '1.5rem', height: '1.5rem', position: 'absolute'}}>{cartQuantity}</div>
+                            <div className='rounded-full flex justify-center items-center bg-emerald-400 text-white -bottom-2 -left-2' style={{width: '1.5rem', height: '1.5rem', position: 'absolute'}}>{cartQuantity}</div>
                             </button>
                                 
                             
@@ -123,12 +123,12 @@ export default function NavBar() {
                     <div className="-mt-10 lg:hidden bg-white shadow-md mb-20">
                         
                         <div className="px-2 pt-2 pb-3 space-y-1">
-                            <Link to="/planthoodie" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Plant Products</Link>  
-                            <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Sustainability</Link>
-                            <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Contact</Link>
+                            <Link onClick={toggleMenu} to="/planthoodie" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Plant Products</Link>  
+                            <Link onClick={toggleMenu} to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Sustainability</Link>
+                            <Link onClick={toggleMenu} to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Contact</Link>
                             {/* Mobile Login and Checkout Buttons */}
-                            <Link href="/login" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Log in</Link>
-                            <button onClick={toggleSide} className="w-full flex items-center px-3 py-2 rounded-md text-base font-semibold text-black bg-emerald-50 hover:bg-emerald-200">
+                            <Link to="/planthoodie" onClick={toggleMenu} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-black">Log in</Link>
+                            <button  onClick={toggleSide} className="w-full flex items-center px-3 py-2 rounded-md text-base font-semibold text-black bg-emerald-50 hover:bg-emerald-200">
                                 {/* Shopping Cart Icon */}
                                 <img style={{height: '3vh'}} className="pr-3" src="https://cdn-icons-png.flaticon.com/512/468/468209.png" alt="..." />
                                 Checkout

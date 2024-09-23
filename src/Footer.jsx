@@ -2,6 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',  // Optional: adds smooth scrolling
+    });
+  }
+
   return (
     <footer className="relative bg-gray-800 pt-8 pb-6">
       <div className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style={{height: "80px"}}>
@@ -16,24 +23,24 @@ export default function Footer() {
             <h4 className="text-3xl font-semibold text-white">Let's keep in touch!</h4>
             <h5 className="text-lg mt-0 mb-2 text-white">Find us on any of these platforms, we respond 1-2 business days.</h5>
             <div className="mt-6">
-              <a href="https://www.twitter.com/" >
+              <a href="https://www.twitter.com/" onClick={scrollToTop}>
                 <i className="fab fa-twitter bg-white text-lightBlue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
                 </i>
               </a>
-              <a href="https://www.twitter.com" >
+              <a href="https://www.twitter.com" onClick={scrollToTop}>
                 <i className="fab fa-facebook bg-white text-blue-600  font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
                 </i>
               </a>
-              <a href="https://www.twitter.com/creativetim" >
+              <a href="https://www.twitter.com/" onClick={scrollToTop}>
                 <i className="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
                 </i>
               </a>
-              <a href="https://www.github.com" >
+              <a href="https://www.github.com" onClick={scrollToTop} >
                 <i className="fab fa-github bg-white text-blueGray-800 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
                 </i>
               </a>
             </div>
-            <p className="text-sm mt-6 text-white font-semibold">All rights reserved</p>
+            <p className="text-sm mt-6 text-white font-semibold">All rights reserved ehehe</p>
           </div>
           <div className="w-full md:w-6/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
@@ -58,16 +65,16 @@ export default function Footer() {
                 <span className="block uppercase text-white text-sm font-semibold mb-2">Other Resources</span>
                 <ul className="list-unstyled">
                   <li>
-                    <Link className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Terms &amp; Conditions</Link>
+                    <Link onClick={scrollToTop} className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Terms &amp; Conditions</Link>
                   </li>
                   <li>
-                    <Link className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Refund Policy</Link>
+                    <Link onClick={scrollToTop} className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Refund Policy</Link>
                   </li>
                   <li>
-                    <Link className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Privacy Policy</Link>
+                    <Link onClick={scrollToTop} className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to='/contactus'className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Intellectual Property Rights</Link>
+                    <Link to='/contactus' onClick={scrollToTop} className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Intellectual Property Rights</Link>
                   </li>
                 </ul>
               </div>
