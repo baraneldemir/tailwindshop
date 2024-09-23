@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+
 import { useShoppingCart } from './context/ShoppingCartContext'
 
 export default function StoreItem({ id, name, price, imgUrl }) {
 
-    const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart} = useShoppingCart()
-    const quantity = getItemQuantity(id)
+    const { getItemQuantity, increaseCartQuantity} = useShoppingCart()
+    // const quantity = getItemQuantity(id)
 
     return (
         <div class="mx-1 m-1 overflow-hidden">
