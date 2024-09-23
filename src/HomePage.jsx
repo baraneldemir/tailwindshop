@@ -59,7 +59,7 @@ export default function HomePage() {
                                     <Link to='/'><img className='rounded-lg' alt='women' src={women1} /></Link>
                                     <div className="absolute inset-0 flex flex-col justify-center items-center text-white py-2">
                                         <span className="text-lg md:text-2xl font-bold text-center">Give your friends a new purpose</span>
-                                        <button className="px-5 py-2 text-sm md:text-lg font-bold border-2 md:mt-2 rounded-xl hover:bg-pink-400 duration-500 bg-opacity-50 bg-black ">Shop Now!</button>
+                                        <button className="px-5 py-2 text-sm md:text-lg font-bold border-2 md:mt-2 rounded-xl hover:bg-pink-400 duration-500 bg-opacity-50 bg-black "><Link to="/planthoodie" >Shop Now!</Link></button>
                                     </div>
                                     
                                 </div>
