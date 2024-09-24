@@ -1,5 +1,6 @@
 
 import { useShoppingCart } from './context/ShoppingCartContext'
+import FormatCurrency from './utilities/FormatCurrency'
 
 export default function StoreItem({ id, name, price, imgUrl }) {
 
@@ -15,9 +16,9 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                 <a href="/" class="text-sm font-semibold  text-gray-900 hover:underline dark:text-white">{name}</a>
                 <p class="text-xs text-gray-500 ">Carefully made</p>
                 <p class="text-xs  text-gray-900 dark:text-white">
-                    <span class="line-through">69.99£</span>
+                    <span class="line-through">{FormatCurrency(69.99)}</span>
                 </p>
-                <p class="text-lg   text-black-600">{price}£</p>
+                <p class="text-lg   text-black-600">{FormatCurrency(price)}</p>
             </div>
             <div class="mt-6 flex items-center gap-2.5">
                 <button class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
