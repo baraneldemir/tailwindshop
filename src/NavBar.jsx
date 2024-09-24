@@ -5,6 +5,7 @@ import logo from './images/logo.png'
 import cartlogo from './images/cartlogo.png'
 import { useShoppingCart } from './context/ShoppingCartContext';
 import ShoppingCart from './ShoppingCart';
+import loginmen from './images/loginmen.png'
 
 export default function NavBar() {
 
@@ -24,17 +25,17 @@ export default function NavBar() {
 
     return (
         <>
-        <div  className='sticky top-0 z-15 '>
+        <div  className='sticky top-0 z-20 '>
             <nav>
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-1 flex justify-between py-8 mb-10">
                     <div className="relative z-1 flex items-center gap-16">
                         <Link as={Link} to="/" aria-label="Home">
-                            <img alt='logo' src={logo} className='min-w-[80px] h-[80px] lg:w-[150px] lg:min-h-[150px]' />
+                            <img alt='logo' src={logo} className='bg-white bg-opacity-80 rounded-full min-w-[80px] h-[80px] lg:w-[150px] lg:min-h-[150px] ml-2' />
                         </Link>
                         
                         {/* Desktop Navigation Links */}
                         
-                        <div className="hidden lg:flex lg:gap-10">
+                        <div className="hidden lg:flex lg:gap-10 bg-white bg-opacity-80 rounded-full p-2">
                             <Link as={Link} to="/planthoodie" className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-emerald-50 hover:delay-0">
                                 <span className="relative z-1">Plant Products</span>
                             </Link>
@@ -101,8 +102,15 @@ export default function NavBar() {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex items-center gap-6">         
-                            <Link className=" justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-emerald-200 active:bg-gray-800 active:text-white/80 hidden lg:block" to="/">Login</Link>
+                        <div className="flex items-center gap-6">
+                            <button className="justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-emerald-200 hidden lg:flex items-center relative">
+                                {/* Shopping Cart Icon */}
+                                <img style={{height: '2.5vh'}} className="pr-3" src={loginmen}alt='login'></img>
+                                Login
+                            
+                            </button>
+                            {/* <img style={{height: '2.5vh'}} className="pr-3" src={loginmen}alt='cart'></img>login         
+                            <Link className=" justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-emerald-200 active:bg-gray-800 active:text-white/80 hidden lg:block" to="/">Login</Link> */}
                             <button onClick={toggleSide} className="justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-emerald-200 hidden lg:flex items-center relative">
                                 {/* Shopping Cart Icon */}
                                 <img style={{height: '2.5vh'}} className="pr-3" src={cartlogo}alt='cart'></img>
@@ -142,7 +150,7 @@ export default function NavBar() {
                 <></> :
 
                 (
-                    <button onClick={toggleSide} className="fixed top-4 right-4 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 focus:outline-none z-20 "
+                    <button onClick={toggleSide} className="fixed top-4 right-4 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 focus:outline-none z-40 "
                     aria-label="Close sidebar" type="button">
                     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-6 w-6">
                         <path
