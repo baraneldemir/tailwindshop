@@ -51,13 +51,13 @@ export default function NavBar() {
                     </div>
                     <div className="flex items-center w-full lg:w-auto">
                         {/* Mobile Menu Toggle Button */}
-                        <h1 className="lg:hidden w-11/12 text-center lg:w-auto lg:text-left" >Plant</h1>
+                        <h1 className="lg:hidden w-11/12 text-center lg:w-auto lg:text-left bg-white bg-opacity-80 rounded-full"></h1>
 
                         <div className="flex items-center">         
                             
-                            <button onClick={toggleSide} className="md:hidden justify-center rounded-lg py-2 px-2 text-sm font-semibold outline-2 outline-offset-2 transition-colors  text-black hover:bg-emerald-200 flex items-center relative">
+                            <button onClick={toggleSide} className="md:hidden justify-center  py-2 px-2 text-sm font-semibold outline-2 outline-offset-2 transition-colors  text-black hover:bg-emerald-200 flex items-center relative bg-white bg-opacity-80 rounded-full mr-1">
                                 {/* Shopping Cart Icon */}
-                                <img  className="pr-3 min-h-6 max-h-6 min-w-9" src={cartlogo}alt='cart'></img>
+                                <img  className="pr-3 min-h-6 max-h-6 min-w-9 -mr-2 " src={cartlogo}alt='cart'></img>
                                 
                             <div className='rounded-full flex justify-center items-center bg-emerald-400 text-white -bottom-2 -left-2' style={{width: '1.5rem', height: '1.5rem', position: 'absolute'}}>{cartQuantity}</div>
                             </button>
@@ -71,11 +71,11 @@ export default function NavBar() {
                         
 
                         
-                        <div className="lg:hidden">
+                        <div className="lg:hidden bg-white bg-opacity-80 rounded-full ">
                             
                             <button
                                 onClick={toggleMenu}
-                                className="relative z-1 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 focus:outline-none"
+                                className="relative z-1 inline-flex items-center rounded-full stroke-gray-900 p-2 hover:bg-emerald-200"
                                 aria-label="Toggle site navigation"
                                 type="button"
                                 aria-expanded={isMenuOpen}
@@ -103,7 +103,7 @@ export default function NavBar() {
                             </button>
                         </div>
                         <div className="flex items-center gap-6">
-                            <button className="justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-emerald-200 hidden lg:flex items-center relative">
+                            <button className="justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors bg-emerald-50 text-black hover:bg-emerald-200 hidden lg:flex items-center relative ">
                                 {/* Shopping Cart Icon */}
                                 <img style={{height: '2.5vh'}} className="pr-3" src={loginmen}alt='login'></img>
                                 Login
