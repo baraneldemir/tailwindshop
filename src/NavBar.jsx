@@ -51,7 +51,7 @@ export default function NavBar() {
                     </div>
                     <div className="flex items-center w-full lg:w-auto">
                         {/* Mobile Menu Toggle Button */}
-                        <h1 className="lg:hidden w-11/12 text-center lg:w-auto lg:text-left bg-white bg-opacity-80 rounded-full"></h1>
+                        <div className="lg:hidden w-11/12 text-center lg:w-auto lg:text-left"></div>
 
                         <div className="flex items-center">         
                             
