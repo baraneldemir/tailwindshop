@@ -42,9 +42,9 @@ export default function HomePage() {
                     </svg>
                 </div>
                 <div className="py-5 overflow-hidden shadow-xl sm:py-3 lg:pb-32 xl:pb-36">
-                    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
-                            <div className="relative max-w-2xl mx-auto z-1 lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
+                            <div className="relative max-w-2xl px-4 mx-auto z-1 lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
                                 <h1 className="mt-5 text-4xl font-medium text-gray-900">Grow Comfort, Wear Change.</h1>
                                 <p className="mt-10 text-sm text-gray-600">At Plant Hoodie, we create comfortable, eco-friendly hoodies made from sustainably sourced materials. With every purchase, you're helping support environmental initiatives like tree planting and waste reduction. Wear something that feels good and does good.</p>
                                 {/* <div className="flex flex-wrap mt-8 gap-x-6 gap-y-4">
@@ -64,7 +64,7 @@ export default function HomePage() {
                             </div>
                             <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 ">
                                 <div className='relative'>
-                                    <Link to='/'><img className='rounded-lg' alt='women' src={women1} /></Link>
+                                    <Link to='/'><img alt='women' src={women1} /></Link>
                                     <div className="absolute inset-0 flex flex-col items-center justify-center py-2 text-white">
                                         <span className="text-lg font-bold text-center md:text-2xl">Give yourself a new look</span>
                                         <button onClick={scrollToTop} className="px-5 py-2 text-2xl font-bold duration-500 bg-black bg-opacity-50 border-2 md:text-2xl md:mt-2 rounded-xl hover:bg-emerald-200 "><Link to="/planthoodie" >Shop Now!</Link></button>
@@ -138,7 +138,7 @@ export default function HomePage() {
                 </div>
                 <div className="container mx-auto">
                     <div className="flex flex-wrap items-center">
-                        <div className="px-12 ml-auto mr-auto -mt-32 w-12/12 md:w-6/12 lg:w-4/12 md:px-4">
+                        <div className="-mt-32 w-12/12 md:ml-auto md:mr-auto md:w-6/12 lg:w-4/12 md:px-4">
                             <div className="relative flex flex-col w-full min-w-0 mb-6 break-words bg-green-100 rounded-lg shadow-2xl">
                                 <img alt="..." src={bej8} className="w-full align-middle rounded-t-lg" />
                                 <blockquote className="relative p-8 mb-4">
@@ -152,9 +152,9 @@ export default function HomePage() {
                                 </blockquote>
                             </div>
                         </div>
-                        <div className="w-full px-4 md:w-6/12">
+                        <div className="w-full md:w-6/12">
                             <div className="flex flex-wrap">
-                                <div className="w-full px-4 md:w-6/12">
+                                <div className="w-full md:w-6/12">
                                     {/* First Box */}
                                     <div className="relative flex flex-col mt-4 min-h-[300px]">
                                         <div className="flex-auto px-4 py-5">
@@ -180,7 +180,7 @@ export default function HomePage() {
                                     </div>
                                 </div>
 
-                                <div className="w-full px-4 md:w-6/12">
+                                <div className="w-full md:w-6/12">
                                     {/* Third Box */}
                                     <div className="relative flex flex-col min-w-0 mt-4 min-h-[300px]">
                                         <div className="flex-auto px-4 py-5">
@@ -188,7 +188,7 @@ export default function HomePage() {
                                                 <img src={bej2} alt="..." />
                                             </div>
                                             <hr className="my-6 border-4 rounded-full border-emerald-300"></hr> 
-                                            <h6 className="mb-1 text-2xl font-semibold">Shop Our Collection</h6>
+                                            <Link to="/planthoodie" className='hover:underline' onClick={scrollToTop}><h6 className="mb-1 text-2xl font-semibold">Shop Our Collection</h6></Link>
                                             <p className="mb-4 text-sm text-blueGray-500">Explore our fully curated collection with detailed descriptions, so you can find the perfect hoodie that aligns with your values.</p>
                                         </div>
                                     </div>

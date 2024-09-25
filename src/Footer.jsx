@@ -40,41 +40,41 @@ export default function Footer() {
                 </i>
               </a>
             </div>
-            <p className="mt-6 text-sm font-semibold text-white">All rights reserved ehehe</p>
+            <p className="mt-6 text-sm font-semibold text-white">All rights reserved.</p>
           </div>
           <div className="w-full px-4 md:w-6/12">
-            <div className="flex flex-wrap mb-6 items-top">
-              <div className="w-full pt-6 ml-auto md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
-                <span className="block mb-2 text-sm font-semibold text-white uppercase">Useful Links</span>
+            <div className="flex mb-6 items-top">
+              <div className="pt-6 md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
+                <span className="mb-2 text-sm font-semibold text-white uppercase ">Useful Links</span>
                 <ul className="list-unstyled">
                   <li>
-                    <Link className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">About Us</Link>
+                    <Link to="/sustainability" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold hover:text-white ">About Us</Link>
                   </li>
                   <li>
-                    <Link className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Contact Us</Link>
+                    <Link to="/contactus" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold hover:text-white ">Contact Us</Link>
                   </li>
                   <li>
-                    <Link className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Shipping Policy</Link>
+                    <Link to="/sustainability" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold hover:text-white ">Shipping Policy</Link>
                   </li>
                   <li>
-                    <Link className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">90-Day Money Back Policy</Link>
+                    <Link to="/sustainability" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold hover:text-white">90-Day Money Back Policy</Link>
                   </li>
                 </ul>
               </div>
-              <div className="w-full pt-6 ml-auto md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
+              <div className="pt-6 ml-auto md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
                 <span className="block mb-2 text-sm font-semibold text-white uppercase">Other Resources</span>
                 <ul className="list-unstyled">
                   <li>
-                    <Link onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Terms &amp; Conditions</Link>
+                    <Link to="/sustainability" onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Terms &amp; Conditions</Link>
                   </li>
                   <li>
-                    <Link onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Refund Policy</Link>
+                    <Link to="/sustainability" onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Refund Policy</Link>
                   </li>
                   <li>
-                    <Link onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Privacy Policy</Link>
+                    <Link to="/sustainability" onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to='/contactus' onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Intellectual Property Rights</Link>
+                    <Link to="/sustainability" onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Intellectual Property Rights</Link>
                   </li>
                 </ul>
               </div>

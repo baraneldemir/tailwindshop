@@ -92,12 +92,12 @@ export default function Carousel() {
           <SwiperSlide key={item.title}>
             <div className="flex-col gap-6 relative shadow-lg mb-10 text-black  px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[370px] md:mt-5 overflow-hidden ">
               <div
-                className="absolute inset-0 bg-center bg-cover"
+                className="absolute inset-0 z-0 transition-all duration-300 bg-center bg-cover rounded-lg hover:scale-110"
                 style={{ backgroundImage: `url(${item.backgroundImage})`}}
               />
               {/* <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" /> */}
               <div className="relative flex flex-col gap-3">
-                <h1 className="text-xl bg-white bg-opacity-50 lg:text-sm ">{item.title} </h1>
+                <h1 className="text-xl font-extrabold lg:text-sm ">{item.title} </h1>
                 {/* <p className="lg:text-[18px]">{item.content} </p> */}
               </div>
               <Link onClick={scrollToTop} to="/planthoodie"><RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" /></Link>

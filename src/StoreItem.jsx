@@ -21,7 +21,7 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"></path>
                     </svg>
                 </button>
-                <img className=" min-h-52 min-w-52 lg:min-h-96 lg:min-w-96 dark:hidden" src={imgUrl} alt="hoodie" />
+                <img className="relative z-0 transition-all duration-300 rounded-lg hover:scale-125 min-h-52 min-w-52 lg:min-h-96 lg:min-w-96 dark:hidden" src={imgUrl} alt="hoodie"  />
             </div>
             
                 <div>

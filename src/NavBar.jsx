@@ -6,6 +6,7 @@ import { useShoppingCart } from './context/ShoppingCartContext';
 import ShoppingCart from './ShoppingCart';
 import loginmen from './images/loginmen.png';
 
+
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSideOpen, setIsSideOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function NavBar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const currentScrollPosition = window.pageYOffset;
+            const currentScrollPosition = window.pageYOffset
 
             // Close the menu when scrolling down
             if (currentScrollPosition > lastScrollPosition && isMenuOpen) {
@@ -53,7 +54,7 @@ export default function NavBar() {
                 <nav>
                     <div className="relative flex justify-between px-4 py-8 mx-auto mb-10 max-w-7xl sm:px-6 lg:px-8 z-1">
                         <div className="relative flex items-center gap-16 z-1">
-                            <Link to="/" aria-label="Home">
+                            <Link to="/" aria-label="Home" onTouchStart={scrollToTop} onClick={() => {scrollToTop();}}>
                                 <img alt='logo' src={logo} className='bg-white bg-opacity-80 rounded-full min-w-[80px] h-[80px] lg:w-[150px] lg:min-h-[150px] ml-2' />
                             </Link>
 
@@ -113,7 +114,7 @@ export default function NavBar() {
                     </div>
 
                     {/* Mobile Navigation Menu */}
-                    <div className={`lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                    <div className={`top-0 fixed w-full lg:hidden h-[90vw] transition-all duration-1000 ease-in-out ${isMenuOpen ? 'translate-y-44' : '-translate-y-full'} ease-in-out duration-1000`}>
                         <div className="mb-20 -mt-10 bg-white shadow-md">
                             <div className="px-2 pt-2 pb-3 space-y-1">
                                 <Link onClick={() => { toggleMenu(); scrollToTop(); }} to="/planthoodie" className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black">Plant Products</Link>
