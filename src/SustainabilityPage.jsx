@@ -1,361 +1,72 @@
-import React from 'react'
 
-export default function SustainabilityPage() {
-  return (
-    <h1>Very sustainble</h1>
-//  <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+import Accordion from "./Accordion";
+
+export default function Sustainability() {
   
-//   <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
-//     <h2 class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">Shopping Cart</h2>
 
-//     <div class="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
-//       <div class="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
-//         <div class="space-y-6">
-//           <div class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
-//             <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
-//               <a href="#" class="shrink-0 md:order-1">
-//                 <img class="h-20 w-20 dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front.svg" alt="imac image" />
-//                 <img class="hidden h-20 w-20 dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg" alt="imac image" />
-//               </a>
-
-//               <label for="counter-input" class="sr-only">Choose quantity:</label>
-//               <div class="flex items-center justify-between md:order-3 md:justify-end">
-//                 <div class="flex items-center">
-//                   <button type="button" id="decrement-button" data-input-counter-decrement="counter-input" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
-//                     </svg>
-//                   </button>
-//                   <input type="text" id="counter-input" data-input-counter class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0 dark:text-white" placeholder="" value="2" required />
-//                   <button type="button" id="increment-button" data-input-counter-increment="counter-input" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
-//                     </svg>
-//                   </button>
-//                 </div>
-//                 <div class="text-end md:order-4 md:w-32">
-//                   <p class="text-base font-bold text-gray-900 dark:text-white">$1,499</p>
-//                 </div>
-//               </div>
-
-//               <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
-//                 <a href="#" class="text-base font-medium text-gray-900 hover:underline dark:text-white">PC system All in One APPLE iMac (2023) mqrq3ro/a, Apple M3, 24" Retina 4.5K, 8GB, SSD 256GB, 10-core GPU, Keyboard layout INT</a>
-
-//                 <div class="flex items-center gap-4">
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
-//                     </svg>
-//                     Add to Favorites
-//                   </button>
-
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
-//                     </svg>
-//                     Remove
-//                   </button>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           <div class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
-//             <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
-//               <a href="#" class="shrink-0 md:order-1">
-//                 <img class="h-20 w-20 dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/apple-watch-light.svg" alt="imac image" />
-//                 <img class="hidden h-20 w-20 dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/apple-watch-dark.svg" alt="imac image" />
-//               </a>
-
-//               <label for="counter-input" class="sr-only">Choose quantity:</label>
-//               <div class="flex items-center justify-between md:order-3 md:justify-end">
-//                 <div class="flex items-center">
-//                   <button type="button" id="decrement-button-2" data-input-counter-decrement="counter-input-2" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
-//                     </svg>
-//                   </button>
-//                   <input type="text" id="counter-input-2" data-input-counter class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0 dark:text-white" placeholder="" value="1" required />
-//                   <button type="button" id="increment-button-2" data-input-counter-increment="counter-input-2" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
-//                     </svg>
-//                   </button>
-//                 </div>
-//                 <div class="text-end md:order-4 md:w-32">
-//                   <p class="text-base font-bold text-gray-900 dark:text-white">$598</p>
-//                 </div>
-//               </div>
-
-//               <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
-//                 <a href="#" class="text-base font-medium text-gray-900 hover:underline dark:text-white">Restored Apple Watch Series 8 (GPS) 41mm Midnight Aluminum Case with Midnight Sport Band</a>
-
-//                 <div class="flex items-center gap-4">
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
-//                     </svg>
-//                     Add to Favorites
-//                   </button>
-
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
-//                     </svg>
-//                     Remove
-//                   </button>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           <div class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
-//             <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
-//               <a href="#" class="shrink-0 md:order-1">
-//                 <img class="h-20 w-20 dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/macbook-pro-light.svg" alt="imac image" />
-//                 <img class="hidden h-20 w-20 dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/macbook-pro-dark.svg" alt="imac image" />
-//               </a>
-
-//               <label for="counter-input" class="sr-only">Choose quantity:</label>
-//               <div class="flex items-center justify-between md:order-3 md:justify-end">
-//                 <div class="flex items-center">
-//                   <button type="button" id="decrement-button-3" data-input-counter-decrement="counter-input-3" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
-//                     </svg>
-//                   </button>
-//                   <input type="text" id="counter-input-3" data-input-counter class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0 dark:text-white" placeholder="" value="1" required />
-//                   <button type="button" id="increment-button-3" data-input-counter-increment="counter-input-3" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
-//                     </svg>
-//                   </button>
-//                 </div>
-//                 <div class="text-end md:order-4 md:w-32">
-//                   <p class="text-base font-bold text-gray-900 dark:text-white">$1,799</p>
-//                 </div>
-//               </div>
-
-//               <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
-//                 <a href="#" class="text-base font-medium text-gray-900 hover:underline dark:text-white">Apple - MacBook Pro 16" Laptop, M3 Pro chip, 36GB Memory, 18-core GPU, 512GB SSD, Space Black</a>
-
-//                 <div class="flex items-center gap-4">
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
-//                     </svg>
-//                     Add to Favorites
-//                   </button>
-
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
-//                     </svg>
-//                     Remove
-//                   </button>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           <div class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
-//             <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
-//               <a href="#" class="shrink-0 md:order-1">
-//                 <img class="h-20 w-20 dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/ipad-light.svg" alt="imac image" />
-//                 <img class="hidden h-20 w-20 dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/ipad-dark.svg" alt="imac image" />
-//               </a>
-
-//               <label for="counter-input" class="sr-only">Choose quantity:</label>
-//               <div class="flex items-center justify-between md:order-3 md:justify-end">
-//                 <div class="flex items-center">
-//                   <button type="button" id="decrement-button-4" data-input-counter-decrement="counter-input-4" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
-//                     </svg>
-//                   </button>
-//                   <input type="text" id="counter-input-4" data-input-counter class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0 dark:text-white" placeholder="" value="1" required />
-//                   <button type="button" id="increment-button-4" data-input-counter-increment="counter-input-4" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
-//                     </svg>
-//                   </button>
-//                 </div>
-//                 <div class="text-end md:order-4 md:w-32">
-//                   <p class="text-base font-bold text-gray-900 dark:text-white">$699</p>
-//                 </div>
-//               </div>
-
-//               <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
-//                 <a href="#" class="text-base font-medium text-gray-900 hover:underline dark:text-white">Tablet APPLE iPad Pro 12.9" 6th Gen, 128GB, Wi-Fi, Gold</a>
-
-//                 <div class="flex items-center gap-4">
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
-//                     </svg>
-//                     Add to Favorites
-//                   </button>
-
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
-//                     </svg>
-//                     Remove
-//                   </button>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           <div class="rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
-//             <div class="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
-//               <a href="#" class="w-20 shrink-0 md:order-1">
-//                 <img class="h-20 w-20 dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/iphone-light.svg" alt="imac image" />
-//                 <img class="hidden h-20 w-20 dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/iphone-dark.svg" alt="imac image" />
-//               </a>
-
-//               <label for="counter-input" class="sr-only">Choose quantity:</label>
-//               <div class="flex items-center justify-between md:order-3 md:justify-end">
-//                 <div class="flex items-center">
-//                   <button type="button" id="decrement-button-5" data-input-counter-decrement="counter-input-5" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
-//                     </svg>
-//                   </button>
-//                   <input type="text" id="counter-input-5" data-input-counter class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0 dark:text-white" placeholder="" value="3" required />
-//                   <button type="button" id="increment-button-5" data-input-counter-increment="counter-input-5" class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-//                     <svg class="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
-//                     </svg>
-//                   </button>
-//                 </div>
-//                 <div class="text-end md:order-4 md:w-32">
-//                   <p class="text-base font-bold text-gray-900 dark:text-white">$2,997</p>
-//                 </div>
-//               </div>
-
-//               <div class="w-full min-w-0 flex-1 space-y-4 md:order-2 md:max-w-md">
-//                 <a href="#" class="text-base font-medium text-gray-900 hover:underline dark:text-white">APPLE iPhone 15 5G phone, 256GB, Gold</a>
-
-//                 <div class="flex items-center gap-4">
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
-//                     </svg>
-//                     Add to Favorites
-//                   </button>
-
-//                   <button type="button" class="inline-flex items-center text-sm font-medium text-red-600 hover:underline dark:text-red-500">
-//                     <svg class="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
-//                     </svg>
-//                     Remove
-//                   </button>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div class="hidden xl:mt-8 xl:block">
-//           <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">People also bought</h3>
-//           <div class="mt-6 grid grid-cols-3 gap-4 sm:mt-8">
-//             <div class="space-y-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-//               <a href="#" class="overflow-hidden rounded">
-//                 <img class="mx-auto h-44 w-44 dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front.svg" alt="imac image" />
-//                 <img class="mx-auto hidden h-44 w-44 dark:block" src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg" alt="imac image" />
-//               </a>
-//               <div>
-//                 <a href="#" class="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">iMac 27”</a>
-//                 <p class="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">This generation has some improvements, including a longer continuous battery life.</p>
-//               </div>
-//               <div>
-//                 <p class="text-lg font-bold text-gray-900 dark:text-white">
-//                   <span class="line-through"> $399,99 </span>
-//                 </p>
-//                 <p class="text-lg font-bold leading-tight text-red-600 dark:text-red-500">$299</p>
-//               </div>
-//               <div class="mt-6 flex items-center gap-2.5">
-//                 <button data-tooltip-target="favourites-tooltip-1" type="button" class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
-//                   <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-//                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"></path>
-//                   </svg>
-//                 </button>
-//                 <div id="favourites-tooltip-1" role="tooltip" class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
-//                   Add to favourites
-//                   <div class="tooltip-arrow" data-popper-arrow></div>
-//                 </div>
-//                 <button type="button" class="inline-flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-//                   <svg class="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4" />
-//                   </svg>
-//                   Add to cart
-//                 </button>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div> 
-
-
-
-
-
-
-
-//       <div class="mx-auto mt-6 max-w-4xl flex-1 space-y-6 lg:mt-0 lg:w-full">
-//         <div class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
-//           <p class="text-xl font-semibold text-gray-900 dark:text-white">Order summary</p>
-
-//           <div class="space-y-4">
-//             <div class="space-y-2">
-//               <dl class="flex items-center justify-between gap-4">
-//                 <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Original price</dt>
-//                 <dd class="text-base font-medium text-gray-900 dark:text-white">$7,592.00</dd>
-//               </dl>
-
-//               <dl class="flex items-center justify-between gap-4">
-//                 <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Savings</dt>
-//                 <dd class="text-base font-medium text-green-600">-$299.00</dd>
-//               </dl>
-
-//               <dl class="flex items-center justify-between gap-4">
-//                 <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Store Pickup</dt>
-//                 <dd class="text-base font-medium text-gray-900 dark:text-white">$99</dd>
-//               </dl>
-
-//               <dl class="flex items-center justify-between gap-4">
-//                 <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Tax</dt>
-//                 <dd class="text-base font-medium text-gray-900 dark:text-white">$799</dd>
-//               </dl>
-//             </div>
-
-//             <dl class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2 dark:border-gray-700">
-//               <dt class="text-base font-bold text-gray-900 dark:text-white">Total</dt>
-//               <dd class="text-base font-bold text-gray-900 dark:text-white">$8,191.00</dd>
-//             </dl>
-//           </div>
-
-//           <a href="#" class="flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Proceed to Checkout</a>
-
-//           <div class="flex items-center justify-center gap-2">
-//             <span class="text-sm font-normal text-gray-500 dark:text-gray-400"> or </span>
-//             <a href="/" title="" class="inline-flex items-center gap-2 text-sm font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">
-//               Continue Shopping
-//               <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-//                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
-//               </svg>
-//             </a>
-//           </div>
-//         </div>
-
-//         <div class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
-//           <form class="space-y-4">
-//             <div>
-//               <label for="voucher" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Do you have a voucher or gift card? </label>
-//               <input type="text" id="voucher" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" placeholder="" required />
-//             </div>
-//             <button type="submit" class="flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Apply Code</button>
-//           </form>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </section>
+  return (
+    <>
+    <h1 className="mx-5 mb-4 text-2xl font-bold md:mx-32" >Our Clothes and How To Care</h1>
+    <div className="mb-20 rounded-lg ">
+    
+      <Accordion
+        title=" What Makes Plant Cloth Hoodies Sustainable?"
+        answer="Plant Cloth hoodies are crafted from eco-friendly materials such as organic cotton, recycled polyester, and Tencel. Our commitment to sustainability extends beyond fabrics; we utilize low-impact dyes and environmentally friendly manufacturing processes. Each hoodie is designed to minimize waste and reduce our carbon footprint. By choosing sustainable materials, we ensure that our products are not only comfortable but also contribute positively to the planet. We believe in making fashion that doesn't compromise the environment."
+      />
+      <Accordion
+        title="How Do We Contribute to Environmental Conservation?"
+        answer="Every Plant Cloth hoodie purchased helps support environmental conservation efforts. A portion of our profits is donated to organizations dedicated to protecting forests and oceans. Additionally, by using sustainable materials, we reduce the demand for harmful manufacturing processes that damage ecosystems. Each hoodie serves as a reminder that fashion can be both stylish and responsible. Together, we can make a significant impact on our planet's health."
+      />
+      <Accordion
+        title="Why Choose Organic Cotton for Our Hoodies?"
+        answer="Organic cotton is grown without harmful pesticides and synthetic fertilizers, making it a safer choice for both the environment and farmers. At Plant Cloth, we prioritize using organic cotton to create soft, breathable hoodies that are gentle on the skin. This method of farming also conserves water and promotes biodiversity. By opting for organic cotton, we support sustainable agriculture practices that protect our planet. It's a choice that reflects our commitment to quality and environmental stewardship."
+      />
+      <Accordion
+        title="What Sets Plant Cloth Apart from Other Clothing Brands?"
+        answer="Plant Cloth stands out through our unwavering commitment to sustainability and ethical production practices. Unlike many fast-fashion brands, we prioritize quality over quantity, creating durable hoodies that last. Our transparent supply chain ensures that every step of production meets ethical standards. We also focus on creating timeless designs that transcend trends, promoting a more sustainable wardrobe. When you choose Plant Cloth, you're supporting a brand that genuinely cares for the planet."
+      />
+      <Accordion
+        title="How Do We Ensure Ethical Labor Practices?"
+        answer="At Plant Cloth, we partner with manufacturers who adhere to fair labor practices. We believe that everyone involved in the production process deserves fair wages and safe working conditions. Our partners are regularly audited to ensure compliance with ethical labor standards. By supporting ethical manufacturing, we help create a positive impact in communities around the world. Our commitment to transparency ensures that you can shop with confidence."
+      />
+      <Accordion
+        title="What is the Importance of Using Recycled Materials?"
+        answer="Utilizing recycled materials significantly reduces waste and conserves natural resources. By incorporating recycled polyester into our hoodies, we minimize the reliance on virgin plastic and decrease pollution. This process not only diverts waste from landfills but also lowers the energy required for production. At Plant Cloth, we strive to create a circular economy where materials are reused and repurposed. Each hoodie reflects our dedication to innovative solutions for a sustainable future."
+      />
+      <Accordion
+        title="Can Sustainable Fashion Be Stylish?"
+        answer="Absolutely! At Plant Cloth, we believe that sustainable fashion can and should be stylish. Our designs are crafted to combine comfort, functionality, and contemporary aesthetics. We create versatile hoodies that can be worn for various occasions, from casual outings to cozy nights in. Sustainable doesn't mean sacrificing style; it means embracing a new way of thinking about fashion. Join us in redefining what it means to be fashionable in an eco-conscious world."
+      />
+      <Accordion
+        title="How Can I Care for My Plant Cloth Hoodie?"
+        answer="Caring for your Plant Cloth hoodie is essential for maintaining its quality and sustainability. We recommend washing in cold water and air drying to minimize energy consumption. Avoid using harsh detergents and opt for natural alternatives when possible. Proper care will extend the life of your hoodie and keep it looking great. By taking these simple steps, you contribute to a more sustainable fashion cycle."
+      />
+      <Accordion
+        title="What Types of Hoodies Does Plant Cloth Offer?"
+        answer="Plant Cloth offers a diverse range of hoodies to cater to different styles and preferences. From classic pullovers to zip-up styles, each hoodie is designed with versatility in mind. We also provide various colors and patterns to suit any wardrobe. Our collection is thoughtfully crafted to ensure comfort and durability. Whether you prefer a minimalist look or something bold, there’s a Plant Cloth hoodie for everyone."
+      />
+      <Accordion
+        title="How Does Plant Cloth Support Local Communities?"
+        answer="We believe in giving back to the communities that support us. Plant Cloth partners with local organizations to promote sustainability education and provide resources for environmental initiatives. Our commitment extends to sourcing materials locally whenever possible, which helps strengthen the local economy. By supporting Plant Cloth, you’re also supporting community growth and environmental stewardship. Together, we can make a difference at the grassroots level."
+      />
+      <Accordion
+        title="What’s the Impact of Fast Fashion on the Environment?"
+        answer="Fast fashion contributes significantly to environmental degradation, from excessive waste to pollution. The rapid production cycles lead to overconsumption and a culture of disposability. At Plant Cloth, we aim to challenge this model by promoting slow fashion principles. By creating high-quality, timeless pieces, we encourage consumers to invest in their wardrobes rather than constantly replace them. Your choice to shop sustainably helps combat the negative effects of fast fashion."
+      />
+      <Accordion
+        title="Are Plant Cloth Products Vegan?"
+        answer="While our products are made from sustainable materials, we are also committed to offering vegan-friendly options. Many of our hoodies are free from animal products, ensuring that they align with a vegan lifestyle. We continually strive to expand our range to include more vegan materials. Our dedication to cruelty-free fashion means you can wear our hoodies with pride. Each purchase supports a compassionate approach to clothing."
+      />
+      <Accordion
+        title="What Are the Benefits of Sustainable Fashion?"
+        answer="Sustainable fashion offers numerous benefits, from reducing environmental impact to supporting ethical practices. By choosing sustainable brands like Plant Cloth, you help decrease pollution and conserve resources. It promotes a healthier planet and fosters social responsibility within the fashion industry. Additionally, sustainable fashion often focuses on quality, resulting in longer-lasting products. Embracing sustainable choices contributes to a brighter future for the fashion industry and the environment."
+      />
+      <Accordion
+        title="What Should I Expect from Plant Cloth’s Customer Service?"
+        answer="At Plant Cloth, we pride ourselves on providing exceptional customer service. Our team is dedicated to ensuring a smooth shopping experience, from answering inquiries to assisting with returns and exchanges. We value your feedback and strive to improve continuously. Our commitment to transparency extends to our customer service practices, so you can trust that we’re here to support you. Shopping with us means being part of a community that cares for both you and the environment."
+      />
+      <Accordion title=" How Can I Get Involved in Plant Cloth’s Sustainability Efforts?" answer="Getting involved with Plant Cloth’s sustainability efforts is easy! You can start by supporting our mission through your purchases. Engage with us on social media to learn more about sustainable practices and share your own efforts. We also encourage customers to participate in local environmental initiatives and spread awareness. Together, we can create a community dedicated to making a positive impact on the planet." />
+    </div>
+    </>
   )
-}   
+}

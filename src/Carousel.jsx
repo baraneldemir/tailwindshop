@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import { RxHeart } from "react-icons/rx";
+import { Link } from 'react-router-dom';
 // import men1 from './images/men1.png'
 import women1 from './images/women1.png'
 import women2 from './images/women2.png'
@@ -22,6 +23,12 @@ import bej6 from './images/kiyafet.png'
 // import bej10 from './images/worldreal.png'
 
 export default function Carousel() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',  // Optional: adds smooth scrolling
+    });
+  }
   
 
     const slides = [
@@ -83,17 +90,17 @@ export default function Carousel() {
       >
         {slides.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className="flex-col gap-6 relative shadow-lg mb-10 text-emerald-600  px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[370px] md:mt-5 overflow-hidden ">
+            <div className="flex-col gap-6 relative shadow-lg mb-10 text-black  px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[370px] md:mt-5 overflow-hidden ">
               <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="absolute inset-0 bg-center bg-cover"
                 style={{ backgroundImage: `url(${item.backgroundImage})`}}
               />
               {/* <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" /> */}
               <div className="relative flex flex-col gap-3">
-                <h1 className="text-xl lg:text-sm ">{item.title} </h1>
+                <h1 className="text-xl bg-white bg-opacity-50 lg:text-sm ">{item.title} </h1>
                 {/* <p className="lg:text-[18px]">{item.content} </p> */}
               </div>
-              <RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" />
+              <Link onClick={scrollToTop} to="/planthoodie"><RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" /></Link>
             </div>
           </SwiperSlide>
         ))}

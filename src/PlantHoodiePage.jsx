@@ -6,8 +6,8 @@ export default function PlantHoodiePage() {
   return (
     <>
       
-      <div class="mb-48 block">
-        <div className='mx-3  grid grid-cols-2 xl:grid-cols-4 gap-4'>{storeItems.map(item => (
+      <div className="block mb-48">
+        <div className='grid grid-cols-2 gap-4 mx-3 xl:grid-cols-4'>{storeItems.map(item => (
           <div>
             <StoreItem{...item} />
           </div>

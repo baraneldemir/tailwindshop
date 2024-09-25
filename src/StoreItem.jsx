@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import { useShoppingCart } from './context/ShoppingCartContext'
 import FormatCurrency from './utilities/FormatCurrency'
 
@@ -6,34 +7,66 @@ export default function StoreItem({ id, name, price, imgUrl }) {
 
     const { increaseCartQuantity} = useShoppingCart()
     // const quantity = getItemQuantity(id)
+    const [selectedSize, setSelectedSize] = useState("")
+
+    function handleSizeSelection(size){
+        setSelectedSize(size)
+    }
 
     return (
-        <div class="mx-1 m-1 overflow-hidden">
-            <a href="/" class="overflow-hidden rounded">
-                <img class=" min-h-52 min-w-52 lg:min-h-96 lg:min-w-96  dark:hidden" src={imgUrl} alt="hoodie" />
-            </a>
-            <div>
-                <a href="/" class="text-sm font-semibold  text-gray-900 hover:underline dark:text-white">{name}</a>
-                <p class="text-xs text-gray-500 ">Carefully made</p>
-                <p class="text-xs  text-gray-900 dark:text-white">
-                    <span class="line-through">{FormatCurrency(69.99)}</span>
-                </p>
-                <p class="text-lg   text-black-600">{FormatCurrency(price)}</p>
-            </div>
-            <div class="mt-6 flex items-center gap-2.5">
-                <button class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700">
-                    <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"></path>
+        <div className="relative m-1 mx-1 overflow-hidden">
+            <div className="overflow-hidden rounded">
+            <button className="absolute top-2 right-2  inline-flex items-center justify-center gap-2 rounded-lg   p-2.5 text-sm font-medium text-white ">
+                    <svg className="w-8 h-8 hover:fill-emerald-300 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"></path>
                     </svg>
                 </button>
-                <div class=" invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-black opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
-                    Add to favourites
-                    <div class="tooltip-arrow" data-popper-arrow></div>
+                <img className=" min-h-52 min-w-52 lg:min-h-96 lg:min-w-96 dark:hidden" src={imgUrl} alt="hoodie" />
+            </div>
+            
+                <div>
+                <p className="text-sm font-semibold text-gray-900 hover:underline dark:text-white">{name}</p>
+
+                {/* size buttons */}
+
+                <div className='flex flex-row py-1 '>
+                    {["XS","S","M","L","XL"].map(size => (
+                        <button
+                            key={size}
+                            className={`w-1/5 p-1 px-2 border border-black hover:bg-emerald-50 ${selectedSize === size ? 'bg-emerald-300' : '' }`}
+                            onClick={()=> handleSizeSelection(size)}
+                            >
+                            {size}
+                        </button>
+                    ))}
+
                 </div>
-                <button onClick={() => increaseCartQuantity(id)} className="inline-flex  items-center justify-center rounded-lg bg-primary-700 border-2 px-5 py-2.5 text-sm font-medium  text-black hover:bg-emerald-50 ">
+                    {/* display selection */}
+                    {selectedSize && (
+                        <>
+                        <p className='mt-2 text-sm text-emerald-400'>Selected size: {selectedSize}</p>
+                        <p onClick={() => handleSizeSelection("")} className='text-sm text-red-500 hover:underline hover:cursor-pointer '>Clear Selection</p>
+                        </>
+                    )}
+                    
+                <p className="text-xs text-gray-500 ">Carefully made</p>
+                <p className="text-xs text-gray-900 dark:text-white">
+                    <span className="line-through">{FormatCurrency(69.99)}</span>
+                </p>
+                <div className='flex flex-row'>
+                <p className="text-lg text-black-600">{FormatCurrency(price)}</p>
+                
+                <button onClick={() => increaseCartQuantity(id)} className="inline-flex items-center justify-center px-5 ml-2 text-sm font-medium text-black border-2 rounded-lg bg-primary-700 hover:bg-emerald-50 " disabled={!selectedSize}>
                     <img className="h-5 pr-2" src="https://cdn-icons-png.flaticon.com/512/468/468209.png" alt="..." />
                     Add to cart
                 </button>
+                </div>
+                </div>
+            
+            <div className="mt-6 flex items-center gap-2.5">
+                
+                
+                
             </div>
         </div>
 

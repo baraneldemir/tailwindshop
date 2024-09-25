@@ -10,71 +10,71 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative bg-gray-800 pt-8 pb-6">
-      <div className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style={{height: "80px"}}>
+    <footer className="relative pt-8 pb-6 bg-gray-800">
+      <div className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20 overflow-hidden pointer-events-none" style={{height: "80px"}}>
         <svg className="absolute bottom-0 overflow-hidden"  preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
           <polygon className="text-gray-800 fill-current" points="2560 0 2560 150 0 100">
           </polygon>
         </svg>
       </div>
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-6/12 px-4">
+          <div className="w-full px-4 md:w-6/12">
             <h4 className="text-3xl font-semibold text-white">Let's keep in touch!</h4>
-            <h5 className="text-lg mt-0 mb-2 text-white">Find us on any of these platforms, we respond 1-2 business days.</h5>
+            <h5 className="mt-0 mb-2 text-lg text-white">Find us on any of these platforms, we respond 1-2 business days.</h5>
             <div className="mt-6">
               <a href="https://www.twitter.com/" onClick={scrollToTop}>
-                <i className="fab fa-twitter bg-white text-lightBlue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
+                <i className="items-center justify-center inline-block p-3 mr-2 text-center bg-white rounded-full shadow-lg outline-none fab fa-twitter text-lightBlue-400 font-lg align-center focus:outline-none">
                 </i>
               </a>
               <a href="https://www.twitter.com" onClick={scrollToTop}>
-                <i className="fab fa-facebook bg-white text-blue-600  font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
+                <i className="items-center justify-center inline-block p-3 mr-2 text-center text-blue-600 bg-white rounded-full outline-none fab fa-facebook font-lg align-center focus:outline-none">
                 </i>
               </a>
               <a href="https://www.twitter.com/" onClick={scrollToTop}>
-                <i className="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
+                <i className="items-center justify-center inline-block p-3 mr-2 text-center text-pink-400 bg-white rounded-full shadow-lg outline-none fab fa-dribbble font-lg align-center focus:outline-none">
                 </i>
               </a>
               <a href="https://www.github.com" onClick={scrollToTop} >
-                <i className="fab fa-github bg-white text-blueGray-800 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
+                <i className="items-center justify-center inline-block p-3 mr-2 text-center bg-white rounded-full shadow-lg outline-none fab fa-github text-blueGray-800 font-lg align-center focus:outline-none">
                 </i>
               </a>
             </div>
-            <p className="text-sm mt-6 text-white font-semibold">All rights reserved ehehe</p>
+            <p className="mt-6 text-sm font-semibold text-white">All rights reserved ehehe</p>
           </div>
-          <div className="w-full md:w-6/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
-                <span className="block uppercase text-white text-sm font-semibold mb-2">Useful Links</span>
+          <div className="w-full px-4 md:w-6/12">
+            <div className="flex flex-wrap mb-6 items-top">
+              <div className="w-full pt-6 ml-auto md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
+                <span className="block mb-2 text-sm font-semibold text-white uppercase">Useful Links</span>
                 <ul className="list-unstyled">
                   <li>
-                    <Link className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">About Us</Link>
+                    <Link className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">About Us</Link>
                   </li>
                   <li>
-                    <Link className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Contact Us</Link>
+                    <Link className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Contact Us</Link>
                   </li>
                   <li>
-                    <Link className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Shipping Policy</Link>
+                    <Link className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Shipping Policy</Link>
                   </li>
                   <li>
-                    <Link className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">90-Day Money Back Policy</Link>
+                    <Link className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">90-Day Money Back Policy</Link>
                   </li>
                 </ul>
               </div>
-              <div className="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
-                <span className="block uppercase text-white text-sm font-semibold mb-2">Other Resources</span>
+              <div className="w-full pt-6 ml-auto md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
+                <span className="block mb-2 text-sm font-semibold text-white uppercase">Other Resources</span>
                 <ul className="list-unstyled">
                   <li>
-                    <Link onClick={scrollToTop} className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Terms &amp; Conditions</Link>
+                    <Link onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Terms &amp; Conditions</Link>
                   </li>
                   <li>
-                    <Link onClick={scrollToTop} className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Refund Policy</Link>
+                    <Link onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Refund Policy</Link>
                   </li>
                   <li>
-                    <Link onClick={scrollToTop} className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Privacy Policy</Link>
+                    <Link onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to='/contactus' onClick={scrollToTop} className="text-blueGray-600 hover:text-white font-semibold block pb-2 text-sm">Intellectual Property Rights</Link>
+                    <Link to='/contactus' onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Intellectual Property Rights</Link>
                   </li>
                 </ul>
               </div>
@@ -82,9 +82,9 @@ export default function Footer() {
           </div>
         </div>
       <hr className="my-6 border-white"></hr> 
-        <div className="flex flex-wrap items-center md:justify-between justify-center">
-          <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-white font-semibold py-1">
+        <div className="flex flex-wrap items-center justify-center md:justify-between">
+          <div className="w-full px-4 mx-auto text-center md:w-4/12">
+            <div className="py-1 text-sm font-semibold text-white">
               Copyright © 2024 baraneldemir
             </div>
           </div>

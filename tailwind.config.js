@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['"PT Sans"', 'sans-serif']
+      sans: ['"EB Garamond", serif;']
     },
     extend: {},
   },
