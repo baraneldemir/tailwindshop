@@ -22,6 +22,59 @@
         "name": "Brownish Hoodie",
         "price": 9.99,
         "imgUrl": "/images/hoodie2.png"
+    },
+    {
+        "id": 5,
+        "name": "White Red Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/women1.png"
+    },
+    {
+        "id": 6,
+        "name": "White Blue Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/women2.png"
+    },
+    {
+        "id": 7,
+        "name": "White Brown Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/women3.png"
+    },
+    {
+        "id": 8,
+        "name": "White Black Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/women4.png"
+    },
+    {
+        "id": 9,
+        "name": "White Gray Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/women5.png"
+    },
+    {
+        "id": 10,
+        "name": "White Plant Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/women6.png"
+    },
+    {
+        "id": 11,
+        "name": "White Brownish Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/women7.png"
+    },
+    {
+        "id": 12,
+        "name": "White Plant Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/women8.png"
+    },
+    {
+        "id": 13,
+        "name": "White Brownish Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/women2.png"
     }
-    
 ]
