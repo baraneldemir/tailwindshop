@@ -31,6 +31,9 @@ export default function HomePage() {
           behavior: 'smooth', 
         });
       }
+
+      
+      
       
     return (
         <> 
