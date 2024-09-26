@@ -52,7 +52,7 @@ export default function NavBar() {
         <>
             <div className='sticky top-0 z-20'>
                 <nav>
-                    <div className="relative flex justify-between px-4 py-8 mx-auto mb-10 max-w-7xl sm:px-6 lg:px-8 z-1">
+                    <div className="relative flex justify-between px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8 z-1">
                         <div className="relative flex items-center gap-16 z-1">
                             <Link to="/" aria-label="Home" onTouchStart={scrollToTop} onClick={() => {scrollToTop();}}>
                                 <img alt='logo' src={logo} className='bg-white bg-opacity-80 rounded-full min-w-[80px] h-[80px] lg:w-[150px] lg:min-h-[150px] ml-2' />
