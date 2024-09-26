@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { RxGithubLogo, RxInstagramLogo, RxLinkedinLogo, RxTwitterLogo } from 'react-icons/rx';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -23,21 +24,26 @@ export default function Footer() {
             <h4 className="text-3xl font-semibold text-white">Let's keep in touch!</h4>
             <h5 className="mt-0 mb-2 text-lg text-white">Find us on any of these platforms, we respond 1-2 business days.</h5>
             <div className="mt-6">
-              <a href="https://www.twitter.com/" onClick={scrollToTop}>
+              <a href="https://www.linkedin.com/" onClick={scrollToTop}>
                 <i className="items-center justify-center inline-block p-3 mr-2 text-center bg-white rounded-full shadow-lg outline-none fab fa-twitter text-lightBlue-400 font-lg align-center focus:outline-none">
+                <RxLinkedinLogo/>
                 </i>
               </a>
               <a href="https://www.twitter.com" onClick={scrollToTop}>
                 <i className="items-center justify-center inline-block p-3 mr-2 text-center text-blue-600 bg-white rounded-full outline-none fab fa-facebook font-lg align-center focus:outline-none">
+                <RxTwitterLogo/>
                 </i>
               </a>
-              <a href="https://www.twitter.com/" onClick={scrollToTop}>
+              <a href="https://www.instagram.com/" onClick={scrollToTop}>
                 <i className="items-center justify-center inline-block p-3 mr-2 text-center text-pink-400 bg-white rounded-full shadow-lg outline-none fab fa-dribbble font-lg align-center focus:outline-none">
+                <RxInstagramLogo/>
                 </i>
               </a>
               <a href="https://www.github.com" onClick={scrollToTop} >
                 <i className="items-center justify-center inline-block p-3 mr-2 text-center bg-white rounded-full shadow-lg outline-none fab fa-github text-blueGray-800 font-lg align-center focus:outline-none">
+                <RxGithubLogo/>
                 </i>
+
               </a>
             </div>
             <p className="mt-6 text-sm font-semibold text-white">All rights reserved.</p>

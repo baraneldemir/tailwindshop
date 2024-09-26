@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 // import men1 from '../images/men1.png'
-import women1 from '../images/women1.png'
+
 import ecosia from '../images/ecosia.png'
 import ecosia2 from '../images/ecosia2.png'
 import ecosia3 from '../images/ecosia3.png'
 import ecosia4 from '../images/ecosia4.png'
 // import ecosia5 from '../images/ecosia5.png'
 import ecosia6 from '../images/ecosia6.png'
+import hoodie4 from '../images/hoodie4.png'
 // import bej from '../images/bejkiyafet.png'
 import bej2 from '../images/beyazkiyafet.png'
 import bej3 from '../images/clothes.png'
@@ -47,6 +48,7 @@ export default function HomePage() {
                         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
                             <div className="relative max-w-2xl px-4 mx-auto z-1 lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
                                 <h1 className="mt-5 text-4xl font-medium text-gray-900">Grow Comfort, Wear Change.</h1>
+                                <h1 className="mt-5 text-xl font-medium text-gray-900">We plant 10 tree for every hoodie bought.</h1>
                                 <p className="mt-10 text-sm text-gray-600">At Plant Hoodie, we create comfortable, eco-friendly hoodies made from sustainably sourced materials. With every purchase, you're helping support environmental initiatives like tree planting and waste reduction. Wear something that feels good and does good.</p>
                                 {/* <div className="flex flex-wrap mt-8 gap-x-6 gap-y-4">
                                 <a aria-label="Download on the App Store" className="text-white transition-colors bg-gray-800 rounded-lg hover:bg-gray-900" href="/">
@@ -65,9 +67,9 @@ export default function HomePage() {
                             </div>
                             <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 ">
                                 <div className='relative'>
-                                    <Link to='/'><img alt='women' src={women1} /></Link>
+                                    <Link to='/'><img alt='women' src={hoodie4} /></Link>
                                     <div className="absolute inset-0 flex flex-col items-center justify-center py-2 text-white">
-                                        <span className="text-lg font-bold text-center md:text-2xl">Give yourself a new look</span>
+                                        <span className="text-lg font-bold text-center mt-80 md:text-2xl">Give yourself a caring look</span>
                                         <button onClick={scrollToTop} className="px-5 py-2 text-2xl font-bold duration-500 bg-black bg-opacity-50 border-2 md:text-2xl md:mt-2 rounded-xl hover:bg-emerald-200 "><Link to="/planthoodie" >Shop Now!</Link></button>
                                     </div>
                                     

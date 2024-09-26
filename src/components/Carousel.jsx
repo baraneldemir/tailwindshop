@@ -7,9 +7,8 @@ import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import { RxHeart } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 // import men1 from '../images/men1.png'
-import women1 from '../images/women1.png'
-import women2 from '../images/women2.png'
-import women3 from '../images/women3.png'
+
+
 // import women4 from '../images/women4.png'
 // import bej from '../images/bejkiyafet.png'
 import bej2 from '../images/beyazkiyafet.png'
@@ -17,6 +16,9 @@ import bej2 from '../images/beyazkiyafet.png'
 // import bej4 from '../images/girlplant.png'
 import bej5 from '../images/global.png'
 import bej6 from '../images/kiyafet.png'
+import hoodie from '../images/hoodie.png'
+import hoodie2 from '../images/hoodie2.png'
+import hoodie4 from '../images/hoodie4.png'
 // import bej7 from '../images/kiyafet3.png'
 // import bej8 from '../images/mountains.png'
 // import bej9 from '../images/World.png'
@@ -35,17 +37,17 @@ export default function Carousel() {
         {
           title: "Product Brown",
           content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
-          backgroundImage: women1 ,
+          backgroundImage: bej6 ,
         },
         {
           title: "Product Red",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: women2,
+          backgroundImage: hoodie,
         },
         {
           title: "Product Brown",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: bej6,
+          backgroundImage: hoodie2,
         },
         {
           title: "Product Yellow",
@@ -55,7 +57,7 @@ export default function Carousel() {
         {
           title: "Product White",
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: women3,
+          backgroundImage: hoodie4,
         },
         {
           title: "Product Black",
