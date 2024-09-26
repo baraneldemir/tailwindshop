@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './images/logo.png';
-import cartlogo from './images/cartlogo.png';
-import { useShoppingCart } from './context/ShoppingCartContext';
+import logo from '../images/logo.png';
+import cartlogo from '../images/cartlogo.png';
+import { useShoppingCart } from '../context/ShoppingCartContext';
 import ShoppingCart from './ShoppingCart';
-import loginmen from './images/loginmen.png';
+import loginmen from '../images/loginmen.png';
 
 
 export default function NavBar() {
@@ -114,10 +114,10 @@ export default function NavBar() {
                     </div>
 
                     {/* Mobile Navigation Menu */}
-                    <div className={`top-0 fixed w-full lg:hidden h-[90vw] transition-all duration-1000 ease-in-out ${isMenuOpen ? 'translate-y-44' : '-translate-y-full'} ease-in-out duration-1000`}>
+                    <div className={`top-0 fixed w-full lg:hidden h-[90vw] transition-all duration-700 ease-in-out ${isMenuOpen ? 'translate-y-44' : '-translate-y-full'} ease-in-out duration-1000`}>
                         <div className="mb-20 -mt-10 bg-white shadow-md">
                             <div className="px-2 pt-2 pb-3 space-y-1">
-                                <Link onClick={() => { toggleMenu(); scrollToTop(); }} to="/planthoodie" className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black">Plant Products</Link>
+                                <Link onClick={() => { toggleMenu(); scrollToTop(); }} to="/planthoodie" className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black ">Plant Products</Link>
                                 <Link onClick={() => { toggleMenu(); scrollToTop(); }} to="/sustainability" className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black">Sustainability</Link>
                                 <Link onClick={() => { toggleMenu(); scrollToTop(); }} to="/contactus" className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black">Contact</Link>
                                 <Link to="/planthoodie" onClick={() => { toggleMenu(); scrollToTop(); }} className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black">Log in</Link>
@@ -137,7 +137,7 @@ export default function NavBar() {
                     </svg>
                 </button>
             )}
-            <ShoppingCart setIsSideOpen={setIsSideOpen} isSideOpen={isSideOpen} />
+            <ShoppingCart toggleSide={toggleSide} setIsSideOpen={setIsSideOpen} isSideOpen={isSideOpen} />
         </>
     );
 }

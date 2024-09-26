@@ -1,6 +1,6 @@
 import React from 'react'
-import storeItems from './data/data.json'
-import StoreItem from './StoreItem'
+import storeItems from '../data/data.json'
+import StoreItem from '../components/StoreItem'
 
 export default function PlantHoodiePage() {
   return (

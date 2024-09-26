@@ -1,24 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import men1 from './images/men1.png'
-import women1 from './images/women1.png'
-import ecosia from './images/ecosia.png'
-import ecosia2 from './images/ecosia2.png'
-import ecosia3 from './images/ecosia3.png'
-import ecosia4 from './images/ecosia4.png'
-// import ecosia5 from './images/ecosia5.png'
-import ecosia6 from './images/ecosia6.png'
-// import bej from './images/bejkiyafet.png'
-import bej2 from './images/beyazkiyafet.png'
-import bej3 from './images/clothes.png'
-import bej4 from './images/girlplant.png'
-// import bej5 from './images/global.png'
-// import bej6 from './images/kiyafet.png'
-// import bej7 from './images/kiyafet3.png'
-import bej8 from './images/mountains.png'
-import bej9 from './images/World.png'
-// import bej10 from './images/worldreal.png'
-import Carousel from './Carousel'
+// import men1 from '../images/men1.png'
+import women1 from '../images/women1.png'
+import ecosia from '../images/ecosia.png'
+import ecosia2 from '../images/ecosia2.png'
+import ecosia3 from '../images/ecosia3.png'
+import ecosia4 from '../images/ecosia4.png'
+// import ecosia5 from '../images/ecosia5.png'
+import ecosia6 from '../images/ecosia6.png'
+// import bej from '../images/bejkiyafet.png'
+import bej2 from '../images/beyazkiyafet.png'
+import bej3 from '../images/clothes.png'
+import bej4 from '../images/girlplant.png'
+// import bej5 from '../images/global.png'
+// import bej6 from '../images/kiyafet.png'
+// import bej7 from '../images/kiyafet3.png'
+import bej8 from '../images/mountains.png'
+import bej9 from '../images/World.png'
+// import bej10 from '../images/worldreal.png'
+import Carousel from '../components/Carousel'
 
 
 
@@ -32,8 +32,9 @@ export default function HomePage() {
       }
       
     return (
-        <>
+        <> 
             <div className="relative flex-auto bg-emerald-50">
+            
 
                 <div className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20" style={{ height: "80px" }}>
                     <svg className="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">

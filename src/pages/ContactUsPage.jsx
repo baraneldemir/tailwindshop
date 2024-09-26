@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MessageSentModal from './MessageSentModal';
+import MessageSentModal from '../components/MessageSentModal';
 
 export default function ContactUsPage() {
   const [messageSent, setMessageSent] = useState(false);

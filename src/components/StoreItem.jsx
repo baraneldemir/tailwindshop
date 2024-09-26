@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
-import { useShoppingCart } from './context/ShoppingCartContext'
-import FormatCurrency from './utilities/FormatCurrency'
+import { useShoppingCart } from '../context/ShoppingCartContext'
+import FormatCurrency from '../utilities/FormatCurrency'
 
 export default function StoreItem({ id, name, price, imgUrl }) {
 

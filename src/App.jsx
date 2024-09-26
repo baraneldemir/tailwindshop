@@ -2,12 +2,12 @@
 // import axios from "axios"
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import NavBar from './NavBar';
-import HomePage from './HomePage';
-import ContactUsPage from './ContactUsPage';
-import SustainabilityPage from './SustainabilityPage';
-import PlantHoodiePage from './PlantHoodiePage';
-import Footer from './Footer';
+import NavBar from './components/NavBar';
+import HomePage from './pages/HomePage';
+import ContactUsPage from './pages/ContactUsPage';
+import SustainabilityPage from './pages/SustainabilityPage';
+import PlantHoodiePage from './pages/PlantHoodiePage';
+import Footer from './components/Footer';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 

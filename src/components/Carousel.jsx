@@ -6,21 +6,21 @@ import "swiper/css/navigation";
 import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import { RxHeart } from "react-icons/rx";
 import { Link } from 'react-router-dom';
-// import men1 from './images/men1.png'
-import women1 from './images/women1.png'
-import women2 from './images/women2.png'
-import women3 from './images/women3.png'
-// import women4 from './images/women4.png'
-// import bej from './images/bejkiyafet.png'
-import bej2 from './images/beyazkiyafet.png'
-// import bej3 from './images/clothes.png'
-// import bej4 from './images/girlplant.png'
-import bej5 from './images/global.png'
-import bej6 from './images/kiyafet.png'
-// import bej7 from './images/kiyafet3.png'
-// import bej8 from './images/mountains.png'
-// import bej9 from './images/World.png'
-// import bej10 from './images/worldreal.png'
+// import men1 from '../images/men1.png'
+import women1 from '../images/women1.png'
+import women2 from '../images/women2.png'
+import women3 from '../images/women3.png'
+// import women4 from '../images/women4.png'
+// import bej from '../images/bejkiyafet.png'
+import bej2 from '../images/beyazkiyafet.png'
+// import bej3 from '../images/clothes.png'
+// import bej4 from '../images/girlplant.png'
+import bej5 from '../images/global.png'
+import bej6 from '../images/kiyafet.png'
+// import bej7 from '../images/kiyafet3.png'
+// import bej8 from '../images/mountains.png'
+// import bej9 from '../images/World.png'
+// import bej10 from '../images/worldreal.png'
 
 export default function Carousel() {
   const scrollToTop = () => {
@@ -100,7 +100,7 @@ export default function Carousel() {
                 <h1 className="text-xl font-extrabold lg:text-sm ">{item.title} </h1>
                 {/* <p className="lg:text-[18px]">{item.content} </p> */}
               </div>
-              <Link onClick={scrollToTop} to="/planthoodie"><RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" /></Link>
+              <Link to="/planthoodie" onTouchStart={scrollToTop} onClick={scrollToTop} ><RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" /></Link>
             </div>
           </SwiperSlide>
         ))}
