@@ -69,7 +69,7 @@ export default function HomePage() {
                                 <div className='relative'>
                                     <Link to='/'><img alt='women' src={hoodie4} /></Link>
                                     <div className="absolute inset-0 flex flex-col items-center justify-center py-2 text-white">
-                                        <span className="text-lg font-bold text-center mt-80 md:text-2xl">Give yourself a caring look</span>
+                                        <span className="text-lg font-bold text-center mt-72 md:text-2xl">Give yourself a caring look</span>
                                         <button onClick={scrollToTop} className="px-5 py-2 text-2xl font-bold duration-500 bg-black bg-opacity-50 border-2 md:text-2xl md:mt-2 rounded-xl hover:bg-emerald-200 "><Link to="/planthoodie" >Shop Now!</Link></button>
                                     </div>
                                     
