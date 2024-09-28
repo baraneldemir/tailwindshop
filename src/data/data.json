@@ -3,78 +3,56 @@
         "id": 1,
         "name": "Plant Hoodie",
         "price": 9.99,
-        "imgUrl": "/images/hoodie4.png"
+        "imgUrl": "/images/reflect5.png"
     },
     {
         "id": 2,
-        "name": "Green Hoodie",
+        "name": "Bear Hoodie",
         "price": 9.99,
-        "imgUrl": "/images/hoodie.png"
+        "imgUrl": "/images/reflect6.png"
     },
     {
         "id": 3,
-        "name": "White Hoodie",
+        "name": "Dark Navy Blue Hoodie",
         "price": 9.99,
-        "imgUrl": "/images/hoodie3.png"
+        "imgUrl": "/images/reflect1.png"
     },
     {
         "id": 4,
-        "name": "Brownish Hoodie",
+        "name": "Cyclist Hoodie",
         "price": 9.99,
-        "imgUrl": "/images/hoodie2.png"
+        "imgUrl": "/images/reflect2.png"
     },
     {
         "id": 5,
-        "name": "White Red Hoodie",
+        "name": "Socrates Hoodie",
         "price": 9.99,
-        "imgUrl": "/images/women1.png"
+        "imgUrl": "/images/reflect3.png"
     },
     {
         "id": 6,
-        "name": "White Blue Hoodie",
+        "name": "Dark Socrates Hoodie",
         "price": 9.99,
-        "imgUrl": "/images/women2.png"
+        "imgUrl": "/images/reflect4.png"
     },
     {
         "id": 7,
         "name": "White Brown Hoodie",
         "price": 9.99,
-        "imgUrl": "/images/women3.png"
+        "imgUrl": "/images/reflect7.png"
     },
     {
         "id": 8,
         "name": "White Black Hoodie",
         "price": 9.99,
-        "imgUrl": "/images/women4.png"
+        "imgUrl": "/images/reflect8.png"
     },
     {
         "id": 9,
         "name": "White Gray Hoodie",
         "price": 9.99,
-        "imgUrl": "/images/women5.png"
-    },
-    {
-        "id": 10,
-        "name": "White Plant Hoodie",
-        "price": 9.99,
-        "imgUrl": "/images/women6.png"
-    },
-    {
-        "id": 11,
-        "name": "White Brownish Hoodie",
-        "price": 9.99,
-        "imgUrl": "/images/women7.png"
-    },
-    {
-        "id": 12,
-        "name": "White Plant Hoodie",
-        "price": 9.99,
-        "imgUrl": "/images/women8.png"
-    },
-    {
-        "id": 13,
-        "name": "White Brownish Hoodie",
-        "price": 9.99,
-        "imgUrl": "/images/women2.png"
+        "imgUrl": "/images/reflect9.png"
     }
+    
+    
 ]

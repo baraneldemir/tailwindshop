@@ -1,10 +1,11 @@
 import React from 'react';
-import women1 from '../images/women1.png';
-import women2 from '../images/women2.png';
-import women3 from '../images/women3.png';
-import women4 from '../images/women4.png';
-import women5 from '../images/women5.png';
-import women6 from '../images/women6.png';
+
+import reflect1 from '../images/reflect1.png';
+import reflect2 from '../images/reflect2.png';
+import reflect3 from '../images/reflect3.png';
+import reflect4 from '../images/reflect4.png';
+import reflect5 from '../images/reflect5.png';
+import reflect6 from '../images/reflect6.png';
 import { Link } from 'react-router-dom';
 
 
@@ -23,34 +24,37 @@ export default function SlidePage() {
   useAnimateOnScroll();
 
   return (
+    <div>
     <div className="grid w-full grid-cols-1 -mt-40 md:-mt-60 md:grid-cols-2">
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
-        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={women1} />
+        <img className="object-cover w-full h-full shrinkAnimated" alt="..." src={reflect5} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Clothes</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
-        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={women2} />
+        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect2} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Hoodies</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
-        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={women3} />
+        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect3} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Outdoor</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
-        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={women4} />
+        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect4} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Accessories</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
-        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={women5} />
+        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect1} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Underwear</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
-        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={women6} />
+        <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect6} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Home</h1>
       </Link>
-      <h1 className='m-5 text-2xl '>Today's Products</h1>
+      
+    </div>
+      <h1 className='m-5 text-2xl text-center '>Plant trees as you buy</h1>
       <Carousel/>
-      <h1 className='m-5 text-2xl '>Discounted Products</h1>
+      <h1 className='m-5 text-2xl text-center '>Discounted Products</h1>
       <Carousel/>
     </div>
   );

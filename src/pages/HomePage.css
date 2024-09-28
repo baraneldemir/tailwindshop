@@ -1,10 +1,11 @@
 .notShrinkAnimated {
     transition: transform 1s ease; 
-    transform: scale(0.5); /* Initial scale */
+    transform: scale(0.5); 
+    
 }
 
 .shrinkAnimated {
-    transform: scale(1); /* Scale down to 50% */
+    transform: scale(1);
 }
 
 

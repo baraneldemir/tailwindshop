@@ -60,16 +60,16 @@ export default function NavBar() {
 
                             {/* Desktop Navigation Links */}
                             <div className="hidden p-2 bg-white rounded-full lg:flex lg:gap-10 bg-opacity-80">
-                                <Link to="/planthoodie" className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
+                                <Link to="/planthoodie"onClick={scrollToTop} className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
                                     <span className="relative z-1">Plant Products</span>
                                 </Link>
-                                <Link to="/aboutus" className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
+                                <Link to="/aboutus" onClick={scrollToTop} className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
                                     <span className="relative z-1">About Us</span>
                                 </Link>
-                                <Link to="/sustainability" className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
+                                <Link to="/sustainability" onClick={scrollToTop} className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
                                     <span className="relative z-1">Sustainability</span>
                                 </Link>
-                                <Link to="/contactus" className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
+                                <Link to="/contactus"onClick={scrollToTop}  className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
                                     <span className="relative z-1">Contact</span>
                                 </Link>
                                

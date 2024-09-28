@@ -24,8 +24,8 @@ export default function Footer() {
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap">
           <div className="w-full px-4 overflow-hidden md:w-6/12 notLeftAnimated">
-            <h4 className="text-3xl font-semibold text-white">Let's keep in touch!</h4>
-            <h5 className="mt-0 mb-2 text-lg text-white">Stalk us on any of these platforms, we respond 1-2 business days.</h5>
+            {/* <h4 className="text-3xl font-semibold text-white">Let's keep in touch!</h4> */}
+            <h5 className="mt-0 mb-2 text-lg text-white">Stalk us on any of these platforms</h5>
             <div className="mt-6">
               <a href="https://www.linkedin.com/" onClick={scrollToTop}>
                 <i className="items-center justify-center inline-block p-3 mr-2 text-center bg-white rounded-full shadow-lg outline-none fab fa-twitter text-lightBlue-400 font-lg align-center focus:outline-none">

@@ -8,7 +8,7 @@ export default function Accordion({title, answer}) {
                 onClick={() => setAccordionOpen(!accordionOpen)}
                 className="flex justify-between w-full pr-1 "
             >
-                <span className="border-b-4 border-emerald-100">{title}</span>
+                <span className="border-b border-black">{title}</span>
                 {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
                 <svg
                     className="mt-1 ml-8 fill-emerald-700 shrink-0"
