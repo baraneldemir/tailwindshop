@@ -1,0 +1,24 @@
+.notUpAnimated {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 300ms
+}
+.upAnimated {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    
+}
+.notLeftAnimated {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s
+}
+.leftAnimated {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    
+}

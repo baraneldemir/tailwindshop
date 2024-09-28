@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+.slider-spot {
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+}

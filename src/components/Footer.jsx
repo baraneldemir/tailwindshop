@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { RxGithubLogo, RxInstagramLogo, RxLinkedinLogo, RxTwitterLogo } from 'react-icons/rx';
+import './StoreItem.css'
+import useAnimateOnScroll from '../hooks/AnimateOnScroll';
 
 export default function Footer() {
+  useAnimateOnScroll()
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -20,9 +23,9 @@ export default function Footer() {
       </div>
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap">
-          <div className="w-full px-4 md:w-6/12">
+          <div className="w-full px-4 md:w-6/12 notLeftAnimated">
             <h4 className="text-3xl font-semibold text-white">Let's keep in touch!</h4>
-            <h5 className="mt-0 mb-2 text-lg text-white">Find us on any of these platforms, we respond 1-2 business days.</h5>
+            <h5 className="mt-0 mb-2 text-lg text-white">Stalk us on any of these platforms, we respond 1-2 business days.</h5>
             <div className="mt-6">
               <a href="https://www.linkedin.com/" onClick={scrollToTop}>
                 <i className="items-center justify-center inline-block p-3 mr-2 text-center bg-white rounded-full shadow-lg outline-none fab fa-twitter text-lightBlue-400 font-lg align-center focus:outline-none">
@@ -48,7 +51,7 @@ export default function Footer() {
             </div>
             <p className="mt-6 text-sm font-semibold text-white">All rights reserved.</p>
           </div>
-          <div className="w-full px-4 md:w-6/12">
+          <div className="w-full px-4 md:w-6/12 notRightAnimated">
             <div className="flex mb-6 items-top">
               <div className="pt-6 md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
                 <span className="mb-2 text-sm font-semibold text-white uppercase ">Useful Links</span>
@@ -88,9 +91,9 @@ export default function Footer() {
           </div>
         </div>
       <hr className="my-6 border-white"></hr> 
-        <div className="flex flex-wrap items-center justify-center md:justify-between">
-          <div className="w-full px-4 mx-auto text-center md:w-4/12">
-            <div className="py-1 text-sm font-semibold text-white">
+        <div className="flex flex-wrap items-center justify-center md:justify-between ">
+          <div className="w-full px-4 mx-auto text-center md:w-4/12 ">
+            <div className="py-1 text-sm font-semibold text-white notUpAnimated">
               Copyright © 2024 baraneldemir
             </div>
           </div>

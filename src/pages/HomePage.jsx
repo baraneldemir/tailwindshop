@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 // import men1 from '../images/men1.png'
 
@@ -20,10 +20,13 @@ import bej8 from '../images/mountains.png'
 import bej9 from '../images/World.png'
 // import bej10 from '../images/worldreal.png'
 import Carousel from '../components/Carousel'
-
+import './HomePage.css'
+import useAnimateOnScroll from '../hooks/AnimateOnScroll'
 
 
 export default function HomePage() {
+
+    useAnimateOnScroll()
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -31,6 +34,8 @@ export default function HomePage() {
           behavior: 'smooth', 
         });
       }
+
+
 
       
       
@@ -50,9 +55,9 @@ export default function HomePage() {
                     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
                             <div className="relative max-w-2xl px-4 mx-auto z-1 lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-                                <h1 className="mt-5 text-4xl font-medium text-gray-900">Grow Comfort, Wear Change.</h1>
-                                <h1 className="mt-5 text-xl font-medium text-gray-900">We plant 10 tree for every hoodie bought.</h1>
-                                <p className="mt-10 text-sm text-gray-600">At Plant Hoodie, we create comfortable, eco-friendly hoodies made from sustainably sourced materials. With every purchase, you're helping support environmental initiatives like tree planting and waste reduction. Wear something that feels good and does good.</p>
+                                <h1 className="mt-5 text-4xl font-medium text-gray-900 notLeftAnimated">Grow Comfort, Wear Change.</h1>
+                                <h1 className="mt-5 text-xl font-medium text-gray-900 notRightAnimated">We plant 10 tree for every hoodie bought.</h1>
+                                <p className="mt-10 text-sm text-gray-600 notLeftAnimated">At Plant Hoodie, we create comfortable, eco-friendly hoodies made from sustainably sourced materials. With every purchase, you're helping support environmental initiatives like tree planting and waste reduction. Wear something that feels good and does good.</p>
                                 {/* <div className="flex flex-wrap mt-8 gap-x-6 gap-y-4">
                                 <a aria-label="Download on the App Store" className="text-white transition-colors bg-gray-800 rounded-lg hover:bg-gray-900" href="/">
                                     <svg viewBox="0 0 120 40" aria-hidden="true" className="h-10">
@@ -69,10 +74,10 @@ export default function HomePage() {
                             </div> */}
                             </div>
                             <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 ">
-                                <div className='relative'>
+                                <div className='relative notRightAnimated'>
                                     <Link to='/'><img alt='women' src={hoodie4} /></Link>
-                                    <div className="absolute inset-0 flex flex-col items-center justify-center py-2 text-white">
-                                        <span className="text-lg font-bold text-center mt-72 md:text-2xl">Give yourself a caring look</span>
+                                    <div className="absolute inset-0 flex flex-col items-center justify-center py-2 text-white notLeftAnimated">
+                                        <span className="text-lg font-bold text-center md:text-2xl ">Give yourself a caring look</span>
                                         <button onClick={scrollToTop} className="px-5 py-2 text-2xl font-bold duration-500 bg-black bg-opacity-50 border-2 md:text-2xl md:mt-2 rounded-xl hover:bg-emerald-200 "><Link to="/planthoodie" >Shop Now!</Link></button>
                                     </div>
                                     
@@ -83,10 +88,10 @@ export default function HomePage() {
                                 {/* <p className="text-sm font-semibold text-center text-gray-900 lg:text-left">Partners</p> */}
                                 <ul className="flex flex-wrap justify-center max-w-xl mx-auto mt-8 gap-x-7 gap-y-8 lg:mx-0 lg:justify-start">
 
-                                    <li className="flex">
+                                    <li className="flex logo notLeftAnimated">
                                         <img alt="TechCrunch" className="h-16" src={ecosia} />
                                     </li>
-                                    <li className="flex">
+                                    <li className="flex logo notLeftAnimated">
                                         <img alt="Wired" loading="lazy" className="h-16" src={ecosia2} />
                                     </li>
                                     {/* <li className="flex xl:block">
@@ -95,16 +100,16 @@ export default function HomePage() {
                                 <li className="flex">
                                     <img alt="BBC" loading="lazy" width="83" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="https://i.imgur.com/3K4nUGl.png"/>
                                 </li> */}
-                                    <li className="flex">
+                                    <li className="flex logo notLeftAnimated">
                                         <img alt="CBS" loading="lazy" className="h-16" src={ecosia3} />
                                     </li>
-                                    <li className="flex">
+                                    <li className="flex logo notLeftAnimated">
                                         <img alt="Fast Company" className="h-16" src={ecosia4} />
                                     </li>
                                     {/* <li className="flex">
                                         <img alt="HuffPost" loading="lazy" width="142" height="32" src={ecosia5} />
                                     </li> */}
-                                    <li className="flex">
+                                    <li className="flex logo notLeftAnimated">
                                         <img alt="Fast Company" loading="lazy" width="124" height="32" src={ecosia6} />
                                     </li>
 
@@ -135,7 +140,7 @@ export default function HomePage() {
                             )}
                         </ul>
                     </div> */}
-            <section className="relative pb-5 mt-40 bg-gray-100">
+            <section className="relative pb-5 mt-40 bg-gray-100 ">
                 <div className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20" style={{ height: "80px" }}>
                     <svg className="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
                         <polygon className="text-gray-100 fill-current " points="2560 0 2560 150 0 100">
@@ -143,8 +148,8 @@ export default function HomePage() {
                     </svg>
                 </div>
                 <div className="container mx-auto">
-                    <div className="flex flex-wrap items-center">
-                        <div className="-mt-32 w-12/12 md:ml-auto md:mr-auto md:w-6/12 lg:w-4/12 md:px-4">
+                    <div className="flex flex-wrap items-center ">
+                        <div className="-mt-32 w-12/12 md:ml-auto md:mr-auto md:w-6/12 lg:w-4/12 md:px-4 notLeftAnimated">
                             <div className="relative flex flex-col w-full min-w-0 mb-6 break-words bg-green-100 rounded-lg shadow-2xl">
                                 <img alt="..." src={bej8} className="w-full align-middle rounded-t-lg" />
                                 <blockquote className="relative p-8 mb-4">
@@ -162,7 +167,7 @@ export default function HomePage() {
                             <div className="flex flex-wrap">
                                 <div className="w-full md:w-6/12">
                                     {/* First Box */}
-                                    <div className="relative flex flex-col mt-4 min-h-[300px]">
+                                    <div className="notRightAnimated   relative flex flex-col mt-4 min-h-[300px]">
                                         <div className="flex-auto px-4 py-5">
                                         <div className="w-auto h-full mb-10 bg-white md:w-40 md:h-full lg:w-56 lg:h-full">
                                                 <img src={bej4} alt="..." />
@@ -174,7 +179,7 @@ export default function HomePage() {
                                     </div>
 
                                     {/* Second Box */}
-                                    <div className="relative flex flex-col min-w-0 min-h-[300px]">
+                                    <div className="notLeftAnimated  relative flex flex-col min-w-0 min-h-[300px]">
                                         <div className="flex-auto px-4 py-5">
                                         <div className="w-auto h-full mb-10 bg-white md:w-40 md:h-full lg:w-56 lg:h-full">
                                                 <img src={bej3} alt="..." />
@@ -188,7 +193,7 @@ export default function HomePage() {
 
                                 <div className="w-full md:w-6/12">
                                     {/* Third Box */}
-                                    <div className="relative flex flex-col min-w-0 mt-4 min-h-[300px]">
+                                    <div className="notRightAnimated relative flex flex-col min-w-0 mt-4 min-h-[300px]">
                                         <div className="flex-auto px-4 py-5">
                                             <div className="w-auto h-full mb-10 bg-white md:w-40 md:h-full lg:w-56 lg:h-full">
                                                 <img src={bej2} alt="..." />
@@ -200,7 +205,7 @@ export default function HomePage() {
                                     </div>
 
                                     {/* Fourth Box */}
-                                    <div className="relative flex flex-col min-w-0 min-h-[300px]">
+                                    <div className="notLeftAnimated relative flex flex-col min-w-0 min-h-[300px]">
                                         <div className="flex-auto px-4 py-5 ">
                                             <div className="w-auto h-full mb-10 bg-white md:w-40 md:h-full lg:w-56 lg:h-full">
                                                 <img src={bej9} alt="..." />
