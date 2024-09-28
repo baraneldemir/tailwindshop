@@ -30,7 +30,8 @@ function App() {
     <ShoppingCartProvider>
         <NavBar/>
         <Routes>
-            <Route path="/" element={ <HomePage/>}/>
+            <Route path="/" element={ <SlidePage/>}/>
+            <Route path="/aboutus" element={ <HomePage/>}/>
             <Route path="/contactus" element={ <ContactUsPage/>}/>
             <Route path="/sustainability" element={ <SustainabilityPage/>}/>
             <Route path="/planthoodie" element={ <PlantHoodiePage/>}/>

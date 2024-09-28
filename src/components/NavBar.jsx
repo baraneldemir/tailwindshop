@@ -121,6 +121,7 @@ export default function NavBar() {
                         <div className="mb-20 -mt-10 bg-white shadow-md">
                             <div className="px-2 pt-2 pb-3 space-y-1">
                                 <Link onClick={() => { toggleMenu(); scrollToTop(); }} to="/planthoodie" className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black ">Plant Products</Link>
+                                <Link onClick={() => { toggleMenu(); scrollToTop(); }} to="/aboutus" className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black ">About Us</Link>
                                 <Link onClick={() => { toggleMenu(); scrollToTop(); }} to="/sustainability" className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black">Sustainability</Link>
                                 <Link onClick={() => { toggleMenu(); scrollToTop(); }} to="/contactus" className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black">Contact</Link>
                                 <Link to="/planthoodie" onClick={() => { toggleMenu(); scrollToTop(); }} className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-emerald-50 hover:text-black">Log in</Link>
