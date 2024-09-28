@@ -4,9 +4,9 @@ import reflect1 from '../images/reflect1.png';
 import reflect2 from '../images/reflect2.png';
 import reflect3 from '../images/reflect3.png';
 import reflect4 from '../images/reflect4.png';
+import reflect5 from '../images/reflect5.png';
 
 import reflect6 from '../images/reflect6.png';
-import ems from '../images/ems.PNG';
 import { Link } from 'react-router-dom';
 
 
@@ -28,7 +28,7 @@ export default function SlidePage() {
     <div>
     <div className="grid w-full grid-cols-1 -mt-40 md:-mt-60 md:grid-cols-2">
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
-        <img className="object-cover w-full h-full shrinkAnimated" alt="..." src={ems} />
+        <img className="object-cover w-full h-full shrinkAnimated" alt="..." src={reflect5} />
         <h1 className="absolute text-sm text-white translate-x-1/2 top-36 right-1/2">Clothes that makes you smile</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
