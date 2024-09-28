@@ -9,7 +9,7 @@ export default function Sustainability() {
   return (
     <>
     <h1 className="mx-5 mb-4 text-2xl font-bold md:mx-32" >Our Clothes and How To Care</h1>
-    <div className="mb-20 rounded-lg notRightAnimated">
+    <div className="hidden mb-20 overflow-hidden rounded-lg notRightAnimated">
     
       <Accordion
         title=" What Makes Plant Cloth Hoodies Sustainable?"

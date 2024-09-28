@@ -2,69 +2,80 @@
 .notUpAnimated {
     opacity: 0;
     filter: blur(5px);
-    transform: translateY(100%);
-    transition: all 1s
+    transform: translateY(50%);
+    transition: all 1s;
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
 }
 .upAnimated {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
     
 }
 
 .notLeftAnimated {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s
+    transform: translateX(-50%);
+    transition: all 1s;
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
 }
 .leftAnimated {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
     
 }
 .notRightAnimated {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(100%);
-    transition: all 1s
+    transform: translateX(50%);
+    transition: all 1s;
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
 }
 .rightAnimated {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
     
 }
 
 .logo:nth-child(1) {
     transition-delay: 200ms;
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
 }
 .logo:nth-child(2) {
     transition-delay: 300ms;
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
 }
 .logo:nth-child(3) {
     transition-delay: 400ms;
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
 }
 .logo:nth-child(4) {
     transition-delay: 500ms;
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
 }
 .logo:nth-child(5) {
     transition-delay: 600ms;
+    max-width: 100%; /* Ensures logos do not exceed their container width */
+    width: auto; /* Allow responsive resizing */
 }
 
 
-@media(prefers-reduced-motion) {
-    .notLeftAnimated {
-        transition: none;
-    }
-    .notUpAnimated {
-        transition: none;
-    }
-    .notRightAnimated {
-        transition: none;
-    }
-}
 
 body {
     overflow-x: hidden; /* Prevents horizontal scroll */

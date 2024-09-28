@@ -44,7 +44,7 @@ export default function ContactUsPage() {
 
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto overflow-hidden">
       <div className="flex flex-wrap -mx-4">
         <div className="w-full px-4">
           <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">

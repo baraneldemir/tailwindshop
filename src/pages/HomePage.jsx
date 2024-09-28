@@ -42,21 +42,21 @@ export default function HomePage() {
       
     return (
         <> 
-            <div className="relative flex-auto bg-emerald-50">
+            <div className="relative flex-auto overflow-hidden bg-emerald-50">
             
 
                 <div className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20" style={{ height: "80px" }}>
-                    <svg className="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <svg className="absolute bottom-0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
                         <polygon className="fill-current text-emerald-50" points="2560 0 2560 150 0 100">
                         </polygon>
                     </svg>
                 </div>
-                <div className="py-5 overflow-hidden shadow-xl sm:py-3 lg:pb-32 xl:pb-36">
+                <div className="py-5 shadow-xl sm:py-3 lg:pb-32 xl:pb-36">
                     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
                             <div className="relative max-w-2xl px-4 mx-auto z-1 lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-                                <h1 className="mt-5 text-4xl font-medium text-gray-900 notLeftAnimated">Grow Comfort, Wear Change.</h1>
-                                <h1 className="mt-5 text-xl font-medium text-gray-900 notRightAnimated">We plant 10 tree for every hoodie bought.</h1>
+                                <h1 className="mt-5 overflow-hidden text-4xl font-medium text-gray-900 notLeftAnimated">Grow Comfort, Wear Change.</h1>
+                                <h1 className="mt-5 overflow-hidden text-xl font-medium text-gray-900 notRightAnimated">We plant 10 tree for every hoodie bought.</h1>
                                 <p className="mt-10 text-sm text-gray-600 notLeftAnimated">At Plant Hoodie, we create comfortable, eco-friendly hoodies made from sustainably sourced materials. With every purchase, you're helping support environmental initiatives like tree planting and waste reduction. Wear something that feels good and does good.</p>
                                 {/* <div className="flex flex-wrap mt-8 gap-x-6 gap-y-4">
                                 <a aria-label="Download on the App Store" className="text-white transition-colors bg-gray-800 rounded-lg hover:bg-gray-900" href="/">
@@ -73,7 +73,7 @@ export default function HomePage() {
                                 </a>
                             </div> */}
                             </div>
-                            <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 ">
+                            <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0">
                                 <div className='relative notRightAnimated'>
                                     <Link to='/'><img alt='women' src={hoodie4} /></Link>
                                     <div className="absolute inset-0 flex flex-col items-center justify-center py-2 text-white notLeftAnimated">
@@ -142,7 +142,7 @@ export default function HomePage() {
                     </div> */}
             <section className="relative pb-5 mt-40 bg-gray-100 ">
                 <div className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20" style={{ height: "80px" }}>
-                    <svg className="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <svg className="absolute bottom-0 " xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
                         <polygon className="text-gray-100 fill-current " points="2560 0 2560 150 0 100">
                         </polygon>
                     </svg>
