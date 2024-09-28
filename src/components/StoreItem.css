@@ -22,3 +22,12 @@
     transform: translateX(0);
     
 }
+
+@media(prefers-reduced-motion) {
+    .notLeftAnimated {
+        transition: none;
+    }
+    .notUpAnimated {
+        transition: none;
+    }
+}

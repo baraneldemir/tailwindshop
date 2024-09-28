@@ -14,12 +14,13 @@ export default function useAnimateOnScroll() {
           } else if (entry.target.classList.contains('notUpAnimated')) {
             entry.target.classList.add('upAnimated');
           }
-        } else {
-          // Remove both classes to reset the animation
-          entry.target.classList.remove('leftAnimated');
-          entry.target.classList.remove('rightAnimated');
-          entry.target.classList.remove('upAnimated');
-        }
+        } 
+        // else {
+        //   // Remove both classes to reset the animation
+        //   entry.target.classList.remove('leftAnimated');
+        //   entry.target.classList.remove('rightAnimated');
+        //   entry.target.classList.remove('upAnimated');
+        // }
       });
     });
 

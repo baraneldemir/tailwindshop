@@ -53,3 +53,15 @@
     transition-delay: 600ms;
 }
 
+
+@media(prefers-reduced-motion) {
+    .notLeftAnimated {
+        transition: none;
+    }
+    .notUpAnimated {
+        transition: none;
+    }
+    .notRightAnimated {
+        transition: none;
+    }
+}
