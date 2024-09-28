@@ -22,14 +22,14 @@ export default function StoreItem({ id, name, price, imgUrl }) {
 
 
     return (
-        <div  className="relative m-1 mx-1 overflow-hidden ">
+        <div  className="relative overflow-hidden ">
             <div className="overflow-hidden rounded ">
             <button className="absolute top-2 right-2  inline-flex items-center justify-center gap-2 rounded-lg   p-2.5 text-sm font-medium text-white ">
                     <svg className="w-8 h-8 hover:fill-emerald-300 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"></path>
                     </svg>
                 </button>
-                <img className="relative z-0 transition-all duration-300 rounded-lg notLeftAnimated hover:scale-125 min-h-52 min-w-52 lg:min-h-96 lg:min-w-96 dark:hidden" src={imgUrl} alt="hoodie"  />
+                <img className="relative z-0 transition-all duration-300 rounded-lg notLeftAnimated hover:scale-125 min-h-52 min-w-40 lg:min-h-96 lg:min-w-96 dark:hidden" src={imgUrl} alt="hoodie"  />
             </div>
             
                 <div>
