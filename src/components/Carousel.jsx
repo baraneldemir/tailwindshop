@@ -103,7 +103,7 @@ export default function Carousel() {
         {slides.map((item) => (
           <SwiperSlide key={item.title}>
             <div className="flex-col gap-6 relative shadow-lg mb-10 text-gray-300  px-3 py-3 h-[250px] w-[215px] lg:h-[400px] lg:w-[370px] md:mt-5 overflow-hidden ">
-              <Link onClick={scrollToTop} onTouchStart={scrollToTop} onTouchEnd={scrollToTop} to="/planthoodie"
+              <Link onTouchStart={scrollToTop} onClick={handleNavigation}  onTouchEnd={handleNavigation} to="/planthoodie"
                 className="absolute inset-0 z-0 transition-all duration-300 bg-center bg-cover rounded-lg hover:scale-110"
                 style={{ backgroundImage: `url(${item.backgroundImage})`}}
               />
