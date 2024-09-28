@@ -28,7 +28,7 @@
 .notLeftAnimated {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-50%);
+    transform: translateX(-100%);
     transition: all 1s;
    
 }
@@ -42,7 +42,7 @@
 .notRightAnimated {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(50%);
+    transform: translateX(10%);
     transition: all 1s;
     
 }

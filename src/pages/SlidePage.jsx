@@ -34,18 +34,22 @@ export default function SlidePage() {
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
         <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect2} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Hoodies</h1>
+        <h1 className="absolute z-20 text-3xl text-black translate-x-1/2 -bottom-5 right-1/2">Plant Trees</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
         <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect3} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Outdoor</h1>
+        <h1 className="absolute z-20 text-3xl text-black translate-x-1/2 -bottom-5 right-1/2">Up To You</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
         <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect4} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Accessories</h1>
+        <h1 className="absolute z-10 text-3xl text-black translate-x-1/2 -bottom-5 right-1/2">Future</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
         <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect1} />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Underwear</h1>
+        <h1 className="absolute z-20 text-3xl text-black translate-x-1/2 -bottom-5 right-1/2">In Our Hands</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
         <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect6} />
