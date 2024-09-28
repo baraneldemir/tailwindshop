@@ -63,15 +63,16 @@ export default function NavBar() {
                                 <Link to="/planthoodie" className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
                                     <span className="relative z-1">Plant Products</span>
                                 </Link>
+                                <Link to="/aboutus" className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
+                                    <span className="relative z-1">About Us</span>
+                                </Link>
                                 <Link to="/sustainability" className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
                                     <span className="relative z-1">Sustainability</span>
                                 </Link>
                                 <Link to="/contactus" className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
                                     <span className="relative z-1">Contact</span>
                                 </Link>
-                                <Link to="/slide" className="relative px-3 py-2 text-sm text-gray-700 rounded-lg hover:text-emerald-50 hover:delay-0">
-                                    <span className="relative z-1">Slide</span>
-                                </Link>
+                               
                             </div>
                         </div>
                         <div className="flex items-center w-full lg:w-auto">
