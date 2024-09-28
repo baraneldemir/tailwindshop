@@ -39,7 +39,7 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                     {["XS","S","M","L","XL"].map(size => (
                         <button
                             key={size}
-                            className={`w-1/5 p-1 px-2 border border-black hover:bg-emerald-50 ${selectedSize === size ? 'bg-emerald-300' : '' }`}
+                            className={`w-1/5 p-1 px-2 border rounded-lg mr-1 border-black hover:bg-emerald-50 ${selectedSize === size ? 'bg-emerald-300' : '' }`}
                             onClick={()=> handleSizeSelection(size)}
                             >
                             {size}
@@ -59,12 +59,12 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                 <p className="text-xs text-gray-900 dark:text-white">
                     <span className="line-through">{FormatCurrency(69.99)}</span>
                 </p>
-                <div className='flex flex-row'>
+                <div className='relative flex flex-row'>
                 <p className="text-lg text-black-600">{FormatCurrency(price)}</p>
                 
-                <button onClick={() => increaseCartQuantity(id)} className="inline-flex items-center justify-center px-5 ml-2 text-sm font-medium text-black border-2 rounded-lg bg-primary-700 hover:bg-emerald-50 " disabled={!selectedSize}>
+                <button onClick={() => increaseCartQuantity(id)} className="absolute inline-flex items-center justify-center p-1 text-sm font-medium text-black border-2 rounded-lg right-3 bottom-1 bg-primary-700 hover:bg-emerald-50 " disabled={!selectedSize}>
                     <img className="h-5 pr-2" src="https://cdn-icons-png.flaticon.com/512/468/468209.png" alt="..." />
-                    Add to cart
+                    Add to Cart
                 </button>
                 </div>
                 </div>
