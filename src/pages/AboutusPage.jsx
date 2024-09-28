@@ -149,8 +149,8 @@ export default function HomePage() {
                 </div>
                 <div className="container mx-auto">
                     <div className="flex flex-wrap items-center ">
-                        <div className="-mt-32 overflow-hidden w-12/12 md:ml-auto md:mr-auto md:w-6/12 lg:w-4/12 md:px-4 notLeftAnimated">
-                            <div className="relative flex flex-col w-full min-w-0 mb-6 break-words bg-green-100 rounded-lg shadow-2xl">
+                        <div className="-mt-32 w-12/12 md:w-6/12 md:px-10 notLeftAnimated">
+                            <div className="flex flex-col min-w-0 mb-6 bg-green-100 rounded-lg shadow-2xl ">
                                 <img alt="..." src={bej8} className="w-full align-middle rounded-t-lg" />
                                 <blockquote className="relative p-8 mb-4">
                                     <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute left-0 block w-full" style={{ height: "95px", top: "-94px" }}>

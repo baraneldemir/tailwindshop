@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
           <div className="w-full px-4 overflow-hidden md:w-6/12 notRightAnimated">
             <div className="flex mb-6 items-top">
-              <div className="pt-6 md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
+              <div className="pt-6 md:w-6/12 xl:w-4/12 md:pt-0">
                 <span className="mb-2 text-sm font-semibold text-white uppercase ">Useful Links</span>
                 <ul className="list-unstyled">
                   <li>
@@ -71,7 +71,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="pt-6 ml-20 md:w-6/12 xl:w-4/12 md:pt-0 md:px-4 ">
-                <span className="mb-2 text-sm font-semibold text-white uppercase ">Other Resources</span>
+                <span className="mb-2 text-sm font-semibold text-white uppercase ">Other</span>
                 <ul className="list-unstyled">
                   <li>
                     <Link to="/sustainability" onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Terms &amp; Conditions</Link>

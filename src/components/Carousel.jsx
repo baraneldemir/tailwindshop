@@ -102,7 +102,7 @@ export default function Carousel() {
                 <h1 className="text-xl font-extrabold lg:text-sm ">{item.title} </h1>
                 {/* <p className="lg:text-[18px]">{item.content} </p> */}
               </div>
-              <Link to="/planthoodie"  onClick={scrollToTop} onTouchEnd={scrollToTop} ><RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" /></Link>
+              <Link onClick={scrollToTop} onTouchStart={scrollToTop} onTouchEnd={scrollToTop} to="/planthoodie"><RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" /></Link>
             </div>
           </SwiperSlide>
         ))}
