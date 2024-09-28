@@ -82,7 +82,7 @@ export default function NavBar() {
                                 
                                 <button onClick={toggleSide} className="relative flex items-center justify-center px-2 py-2 mr-1 text-sm font-semibold text-black bg-white rounded-full md:hidden outline-2 outline-offset-2 hover:bg-emerald-200 bg-opacity-80">
                                     <img className="pr-3 -mr-2 min-h-6 max-h-6 min-w-9" src={cartlogo} alt='cart' />
-                                    <div className='flex items-center justify-center text-white rounded-full bg-emerald-400 -bottom-2 -left-2' style={{ width: '1.5rem', height: '1.5rem', position: 'absolute' }}>{cartQuantity}</div>
+                                    <div className='flex items-center justify-center text-white bg-green-800 rounded-full -bottom-2 -left-2' style={{ width: '1.5rem', height: '1.5rem', position: 'absolute' }}>{cartQuantity}</div>
                                 </button>
                             </div>
 
