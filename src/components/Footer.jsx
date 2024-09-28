@@ -13,6 +13,8 @@ export default function Footer() {
     });
   }
 
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer className="relative pt-8 pb-6 overflow-hidden bg-gray-800">
       <div className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20 overflow-hidden pointer-events-none" style={{height: "80px"}}>
@@ -94,7 +96,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center overflow-hidden md:justify-between">
           <div className="w-full px-4 mx-auto text-center md:w-4/12 ">
             <div className="py-1 overflow-hidden text-sm font-semibold text-white notUpAnimated">
-              Copyright © 2024 baraneldemir
+              Copyright © {currentYear} baraneldemir
             </div>
           </div>
         </div>
