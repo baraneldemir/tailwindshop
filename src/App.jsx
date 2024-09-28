@@ -9,6 +9,7 @@ import SustainabilityPage from './pages/SustainabilityPage';
 import PlantHoodiePage from './pages/PlantHoodiePage';
 import Footer from './components/Footer';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
+import SlidePage from './pages/SlidePage';
 
 
 function App() {  
@@ -33,6 +34,7 @@ function App() {
             <Route path="/contactus" element={ <ContactUsPage/>}/>
             <Route path="/sustainability" element={ <SustainabilityPage/>}/>
             <Route path="/planthoodie" element={ <PlantHoodiePage/>}/>
+            <Route path="/slide" element={ <SlidePage/>}/>
         </Routes>
         <Footer/>
         

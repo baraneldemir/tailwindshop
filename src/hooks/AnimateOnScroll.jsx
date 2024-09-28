@@ -13,6 +13,8 @@ export default function useAnimateOnScroll() {
             entry.target.classList.add('rightAnimated'); // Apply only the color change animation
           } else if (entry.target.classList.contains('notUpAnimated')) {
             entry.target.classList.add('upAnimated');
+          } else if (entry.target.classList.contains('notShrinkAnimated')) {
+            entry.target.classList.add('shrinkAnimated');
           }
         } 
         // else {
@@ -25,7 +27,7 @@ export default function useAnimateOnScroll() {
     });
 
     // Select elements with either of the animation classes
-    const notAnimatedElements = document.querySelectorAll('.notRightAnimated, .notLeftAnimated, .notUpAnimated');
+    const notAnimatedElements = document.querySelectorAll('.notRightAnimated, .notLeftAnimated, .notUpAnimated, .notShrinkAnimated');
     notAnimatedElements.forEach((el) => observer.observe(el));
 
     // Cleanup function to disconnect the observer on component unmount

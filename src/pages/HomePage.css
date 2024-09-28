@@ -1,3 +1,13 @@
+.notShrinkAnimated {
+    transition: transform 1s ease; 
+    transform: scale(0.5); /* Initial scale */
+}
+
+.shrinkAnimated {
+    transform: scale(1); /* Scale down to 50% */
+}
+
+
 
 .notUpAnimated {
     opacity: 0;
