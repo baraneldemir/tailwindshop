@@ -29,7 +29,7 @@ export default function SlidePage() {
     <div className="grid w-full grid-cols-1 -mt-40 md:-mt-60 md:grid-cols-2">
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
         <img className="object-cover w-full h-full shrinkAnimated" alt="..." src={reflect5} />
-        <h1 className="absolute text-sm text-white translate-x-1/2 top-36 right-1/2">Clothes that makes you smile</h1>
+        <h1 className="absolute text-sm text-white translate-x-1/2 top-36 right-1/2">Clothes</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
         <img className="object-cover w-full h-full notShrinkAnimated" alt="..." src={reflect2} />
