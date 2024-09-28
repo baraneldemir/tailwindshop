@@ -17,12 +17,12 @@ export default function useAnimateOnScroll() {
             entry.target.classList.add('shrinkAnimated');
           }
         } 
-        // else {
+        else {
         //   // Remove both classes to reset the animation
         //   entry.target.classList.remove('leftAnimated');
         //   entry.target.classList.remove('rightAnimated');
-        //   entry.target.classList.remove('upAnimated');
-        // }
+          entry.target.classList.remove('shrinkAnimated');
+        }
       });
     });
 

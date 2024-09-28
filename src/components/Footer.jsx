@@ -70,7 +70,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="pt-6 ml-auto md:w-6/12 xl:w-4/12 md:pt-0 md:px-4">
+              <div className="pt-6 ml-20 md:w-6/12 xl:w-4/12 md:pt-0 md:px-4 ">
                 <span className="mb-2 text-sm font-semibold text-white uppercase ">Other Resources</span>
                 <ul className="list-unstyled">
                   <li>
