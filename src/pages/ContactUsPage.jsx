@@ -49,7 +49,7 @@ export default function ContactUsPage() {
         <div className="w-full px-4">
           <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
             <span className="block mb-2 text-lg font-semibold text-primary">
-              <section className="mb-5 bg-white dark:bg-gray-900 notUpAnimated">
+              <section className="mb-5 bg-white dark:bg-gray-900 notLeftAnimated">
                 <div className="max-w-screen-md px-4 mx-auto">
                   <h2 className="mb-4 text-4xl tracking-tight text-center text-gray-900 font-extralight dark:text-white">Contact Us</h2>
                   <p className="mb-1 font-light text-center text-gray-500 lg:mb-8 dark:text-gray-400 sm:text-xl">
