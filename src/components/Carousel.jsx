@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useNavigate } from 'react-router-dom';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -16,6 +17,23 @@ import reflect6 from '../images/reflect6.png'
 
 
 export default function Carousel() {
+  const navigate = useNavigate();
+
+
+  // Function to handle navigation and scroll action
+  const handleNavigation = () => {
+    // Navigate to the desired route
+    navigate('/planthoodie');
+
+    // Delay the scroll to top action to prevent glitch
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Smooth scroll
+      });
+    }, 200); // Delay time in milliseconds
+  };
+  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -94,7 +112,7 @@ export default function Carousel() {
                 <h1 className="text-xl font-extrabold lg:text-sm ">{item.title} </h1>
                 {/* <p className="lg:text-[18px]">{item.content} </p> */}
               </div>
-              <Link onClick={scrollToTop} onTouchStart={scrollToTop} onTouchEnd={scrollToTop} to="/planthoodie"><RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" /></Link>
+              <Link onTouchStart={scrollToTop} onClick={handleNavigation}  onTouchEnd={handleNavigation} to="/planthoodie"><RxHeart className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white hover:text-red-700 hover:rotate-180 duration-700 cursor-pointer" /></Link>
             </div>
           </SwiperSlide>
         ))}
