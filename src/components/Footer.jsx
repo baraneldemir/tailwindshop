@@ -14,7 +14,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative pt-8 pb-6 bg-gray-800">
+    <footer className="relative pt-8 pb-6 overflow-hidden bg-gray-800">
       <div className="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20 overflow-hidden pointer-events-none" style={{height: "80px"}}>
         <svg className="absolute bottom-0 overflow-hidden"  preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
           <polygon className="text-gray-800 fill-current" points="2560 0 2560 150 0 100">
