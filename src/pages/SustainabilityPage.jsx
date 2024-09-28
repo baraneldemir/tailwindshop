@@ -7,9 +7,9 @@ export default function Sustainability() {
   useAnimateOnScroll()
 
   return (
-    <>
+    <div className="overflow-hidden">
     <h1 className="mx-5 mb-4 text-2xl font-bold md:mx-32" >Our Clothes and How To Care</h1>
-    <div className="hidden mb-20 overflow-hidden rounded-lg notRightAnimated">
+    <div className="mb-20 overflow-hidden rounded-lg notRightAnimated">
     
       <Accordion
         title=" What Makes Plant Cloth Hoodies Sustainable?"
@@ -57,6 +57,6 @@ export default function Sustainability() {
         answer="just click checkout ya"
       />
     </div>
-    </>
+    </div>
   )
 }

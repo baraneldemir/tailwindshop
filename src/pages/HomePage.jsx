@@ -74,9 +74,9 @@ export default function HomePage() {
                             </div> */}
                             </div>
                             <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0">
-                                <div className='relative notRightAnimated'>
+                                <div className='relative overflow-hidden notRightAnimated'>
                                     <Link to='/'><img alt='women' src={hoodie4} /></Link>
-                                    <div className="absolute inset-0 flex flex-col items-center justify-center py-2 text-white notLeftAnimated">
+                                    <div className="absolute inset-0 flex flex-col items-center justify-center py-2 overflow-hidden text-white notLeftAnimated">
                                         <span className="text-lg font-bold text-center md:text-2xl ">Give yourself a caring look</span>
                                         <button onClick={scrollToTop} className="px-5 py-2 text-2xl font-bold duration-500 bg-black bg-opacity-50 border-2 md:text-2xl md:mt-2 rounded-xl hover:bg-emerald-200 "><Link to="/planthoodie" >Shop Now!</Link></button>
                                     </div>
@@ -88,10 +88,10 @@ export default function HomePage() {
                                 {/* <p className="text-sm font-semibold text-center text-gray-900 lg:text-left">Partners</p> */}
                                 <ul className="flex flex-wrap justify-center max-w-xl mx-auto mt-8 gap-x-7 gap-y-8 lg:mx-0 lg:justify-start">
 
-                                    <li className="flex logo notLeftAnimated">
+                                    <li className="flex overflow-hidden logo notLeftAnimated">
                                         <img alt="TechCrunch" className="h-16" src={ecosia} />
                                     </li>
-                                    <li className="flex logo notLeftAnimated">
+                                    <li className="flex overflow-hidden logo notLeftAnimated">
                                         <img alt="Wired" loading="lazy" className="h-16" src={ecosia2} />
                                     </li>
                                     {/* <li className="flex xl:block">
@@ -100,16 +100,16 @@ export default function HomePage() {
                                 <li className="flex">
                                     <img alt="BBC" loading="lazy" width="83" height="32" decoding="async" data-nimg="1" className="h-8" style={{ color:"transparent"}} src="https://i.imgur.com/3K4nUGl.png"/>
                                 </li> */}
-                                    <li className="flex logo notLeftAnimated">
+                                    <li className="flex overflow-hidden logo notLeftAnimated">
                                         <img alt="CBS" loading="lazy" className="h-16" src={ecosia3} />
                                     </li>
-                                    <li className="flex logo notLeftAnimated">
+                                    <li className="flex overflow-hidden logo notLeftAnimated">
                                         <img alt="Fast Company" className="h-16" src={ecosia4} />
                                     </li>
                                     {/* <li className="flex">
                                         <img alt="HuffPost" loading="lazy" width="142" height="32" src={ecosia5} />
                                     </li> */}
-                                    <li className="flex logo notLeftAnimated">
+                                    <li className="flex overflow-hidden logo notLeftAnimated">
                                         <img alt="Fast Company" loading="lazy" width="124" height="32" src={ecosia6} />
                                     </li>
 
@@ -149,7 +149,7 @@ export default function HomePage() {
                 </div>
                 <div className="container mx-auto">
                     <div className="flex flex-wrap items-center ">
-                        <div className="-mt-32 w-12/12 md:ml-auto md:mr-auto md:w-6/12 lg:w-4/12 md:px-4 notLeftAnimated">
+                        <div className="-mt-32 overflow-hidden w-12/12 md:ml-auto md:mr-auto md:w-6/12 lg:w-4/12 md:px-4 notLeftAnimated">
                             <div className="relative flex flex-col w-full min-w-0 mb-6 break-words bg-green-100 rounded-lg shadow-2xl">
                                 <img alt="..." src={bej8} className="w-full align-middle rounded-t-lg" />
                                 <blockquote className="relative p-8 mb-4">
@@ -163,7 +163,7 @@ export default function HomePage() {
                                 </blockquote>
                             </div>
                         </div>
-                        <div className="w-full md:w-6/12">
+                        <div className="w-full overflow-hidden md:w-6/12">
                             <div className="flex flex-wrap">
                                 <div className="w-full md:w-6/12">
                                     {/* First Box */}
@@ -179,7 +179,7 @@ export default function HomePage() {
                                     </div>
 
                                     {/* Second Box */}
-                                    <div className="notLeftAnimated  relative flex flex-col min-w-0 min-h-[300px]">
+                                    <div className="notLeftAnimated  overflow-hidden relative flex flex-col min-w-0 min-h-[300px]">
                                         <div className="flex-auto px-4 py-5">
                                         <div className="w-auto h-full mb-10 bg-white md:w-40 md:h-full lg:w-56 lg:h-full">
                                                 <img src={bej3} alt="..." />
@@ -193,7 +193,7 @@ export default function HomePage() {
 
                                 <div className="w-full md:w-6/12">
                                     {/* Third Box */}
-                                    <div className="notRightAnimated relative flex flex-col min-w-0 mt-4 min-h-[300px]">
+                                    <div className="notRightAnimated overflow-hidden relative flex flex-col min-w-0 mt-4 min-h-[300px]">
                                         <div className="flex-auto px-4 py-5">
                                             <div className="w-auto h-full mb-10 bg-white md:w-40 md:h-full lg:w-56 lg:h-full">
                                                 <img src={bej2} alt="..." />
@@ -205,7 +205,7 @@ export default function HomePage() {
                                     </div>
 
                                     {/* Fourth Box */}
-                                    <div className="notLeftAnimated relative flex flex-col min-w-0 min-h-[300px]">
+                                    <div className="notLeftAnimated  overflow-hidden relative flex flex-col min-w-0 min-h-[300px]">
                                         <div className="flex-auto px-4 py-5 ">
                                             <div className="w-auto h-full mb-10 bg-white md:w-40 md:h-full lg:w-56 lg:h-full">
                                                 <img src={bej9} alt="..." />
