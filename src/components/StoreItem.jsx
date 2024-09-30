@@ -3,6 +3,7 @@ import { useShoppingCart } from '../context/ShoppingCartContext'
 import FormatCurrency from '../utilities/FormatCurrency'
 import './StoreItem.css'
 import useAnimateOnScroll from '../hooks/AnimateOnScroll'
+import { RxBookmarkFilled } from 'react-icons/rx'
 
 export default function StoreItem({ id, name, price, imgUrl }) {
     const { increaseCartQuantity } = useShoppingCart()
@@ -12,10 +13,15 @@ export default function StoreItem({ id, name, price, imgUrl }) {
     const [buttonText, setButtonText] = useState("Add to Cart") // To track button text
     const [buttonDisabled, setButtonDisabled] = useState(false) // To prevent spamming the button
     const imgRef = useRef(null)
+    const [isShowSaved, setIsShowSaved] = useState(false);
     useAnimateOnScroll()
 
     function handleSizeSelection(size) {
         setSelectedSize(size)
+    }
+    function handleSaveText() {
+        setIsShowSaved(true)
+        setTimeout(() => setIsShowSaved(false), 1500)
     }
 
     function addToCart() {
@@ -39,6 +45,9 @@ export default function StoreItem({ id, name, price, imgUrl }) {
             zIndex: 1000,
             transition: 'all 1s ease-in-out',
         }
+
+        
+
 
         setCloneStyle(cloneStyle)
         setAnimating(true)
@@ -73,19 +82,21 @@ export default function StoreItem({ id, name, price, imgUrl }) {
 
     return (
         <div className="relative overflow-hidden">
-            <div className="overflow-hidden rounded">
-                <button className="absolute top-2 right-2 inline-flex items-center justify-center gap-2 rounded-lg p-2.5 text-sm font-medium text-white">
-                    <svg className="w-8 h-8 hover:fill-emerald-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"></path>
-                    </svg>
+            <div className="mt-1 overflow-hidden">
+                <button onClick={handleSaveText} className="absolute  left-0 inline-flex items-center justify-center gap-2  p-2.5 text-sm font-medium text-green-800">
+                    
+                    <RxBookmarkFilled className="z-10 w-8 h-8 hover:text-green-600"/>
+                    <span className='z-10 bg-white rounded-lg opacity-80'>
+                    {isShowSaved ? "Item Saved!" : ""}
+                    </span>
                 </button>
-                <img ref={imgRef} className="relative z-0 transition-all duration-300 rounded-lg notLeftAnimated hover:scale-125 min-h-52 min-w-40 lg:min-h-96 lg:min-w-96 dark:hidden" src={imgUrl} alt="hoodie" />
+                <img ref={imgRef} className="relative z-0 transition-all duration-300 notLeftAnimated hover:scale-125 min-h-52 min-w-40 lg:min-h-96 lg:min-w-96 dark:hidden" src={imgUrl} alt="hoodie" />
             </div>
 
             <div>
-                <p className="text-sm font-semibold text-gray-900 hover:underline dark:text-white">{name}</p>
+                <p className="mt-2 text-lg hover:underline dark:text-white">{name}</p>
 
-                <div className='flex flex-row py-1'>
+                <div className='flex flex-row py-1 mt-2'>
                     {["XS", "S", "M", "L", "XL"].map(size => (
                         <button
                             key={size}
@@ -103,18 +114,18 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                         <p onClick={() => handleSizeSelection("")} className='text-sm text-red-500 hover:underline hover:cursor-pointer'>Clear Selection</p>
                     </>
                 )}
+                
+                {/* <p className="text-xs text-gray-500">Carefully made</p> */}
+                
 
-                <p className="text-xs text-gray-500">Carefully made</p>
-                <p className="text-xs text-gray-900 dark:text-white">
-                    <span className="line-through">{FormatCurrency(69.99)}</span>
-                </p>
-
-                <div className='relative flex flex-row'>
-                    <p className="text-lg text-black-600">{FormatCurrency(price)}</p>
-
+                <div className='relative flex flex-row mt-2 mb-2'>
+                    <p className="text-sm text-gray-900 line-through dark:text-white">
+                        {FormatCurrency(69.99)}
+                    </p>
+                    <p className="ml-3 text-sm text-red-500 text-black-600">{FormatCurrency(price)}</p>
                     <button
                         onClick={addToCart}
-                        className={`absolute inline-flex items-center justify-center p-1 text-sm font-medium text-black border-2 rounded-lg right-3 bottom-1 bg-primary-700 hover:bg-emerald-50 transition-all duration-300 ${buttonDisabled ? 'opacity-50' : ''}`}
+                        className={`absolute inline-flex items-center justify-center p-1 text-sm font-medium  text-black border-2 rounded-lg right-3 -bottom-2 bg-primary-700 hover:bg-emerald-50 transition-all duration-300 ${buttonDisabled ? 'opacity-50' : ''}`}
                         disabled={buttonDisabled || !selectedSize}
                     >
                         <img className="h-5 pr-2" src="https://cdn-icons-png.flaticon.com/512/468/468209.png" alt="cart icon" />
