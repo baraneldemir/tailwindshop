@@ -85,7 +85,7 @@ export default function StoreItem({ id, name, price, imgUrl }) {
             <div className="mt-1 overflow-hidden">
                 <button onClick={handleSaveText} className="absolute  left-0 inline-flex items-center justify-center gap-2  p-2.5 text-sm font-medium text-green-800">
                     
-                    <RxBookmarkFilled className="z-10 w-8 h-8 hover:text-green-600"/>
+                    <RxBookmarkFilled className="z-10 w-6 h-6 hover:text-green-600"/>
                     <span className='z-10 bg-white rounded-lg opacity-80'>
                     {isShowSaved ? "Item Saved!" : ""}
                     </span>
@@ -94,13 +94,13 @@ export default function StoreItem({ id, name, price, imgUrl }) {
             </div>
 
             <div>
-                <p className="mt-2 text-lg hover:underline dark:text-white">{name}</p>
+                <p className="mt-2 text-sm hover:underline dark:text-white">{name}</p>
 
-                <div className='flex flex-row py-1 mt-2'>
+                <div className='flex-row py-1 text-xs '>
                     {["XS", "S", "M", "L", "XL"].map(size => (
                         <button
                             key={size}
-                            className={`w-1/5 p-1 px-2 border rounded-lg mr-1 border-black hover:bg-emerald-50 ${selectedSize === size ? 'bg-emerald-300' : ''}`}
+                            className={`w-7 p-1   border rounded-full mr-1 border-slate-400 hover:bg-slate-400 hover:text-white ${selectedSize === size ? 'bg-slate-700 text-white' : ''}`}
                             onClick={() => handleSizeSelection(size)}
                         >
                             {size}
@@ -110,25 +110,26 @@ export default function StoreItem({ id, name, price, imgUrl }) {
 
                 {selectedSize && (
                     <>
-                        <p className='mt-2 text-sm text-emerald-400'>Selected size: {selectedSize}</p>
+                        <p className='text-sm text-black '>Selected size: {selectedSize}</p>
                         <p onClick={() => handleSizeSelection("")} className='text-sm text-red-500 hover:underline hover:cursor-pointer'>Clear Selection</p>
                     </>
                 )}
                 
                 {/* <p className="text-xs text-gray-500">Carefully made</p> */}
                 
-
-                <div className='relative flex flex-row mt-2 mb-2'>
-                    <p className="text-sm text-gray-900 line-through dark:text-white">
+                <p className="text-sm text-gray-900 line-through dark:text-white">
                         {FormatCurrency(69.99)}
                     </p>
+                    
+                <div className='relative flex flex-row mb-2'>
+                    
                     <p className="ml-3 text-sm text-red-500 text-black-600">{FormatCurrency(price)}</p>
                     <button
                         onClick={addToCart}
-                        className={`absolute inline-flex items-center justify-center p-1 text-sm font-medium  text-black border-2 rounded-lg right-3 -bottom-2 bg-primary-700 hover:bg-emerald-50 transition-all duration-300 ${buttonDisabled ? 'opacity-50' : ''}`}
+                        className={` absolute inline-flex items-center border-slate-400 justify-center p-1 text-sm  text-black border rounded-lg right-3 -bottom-2 bg-primary-700  transition-all duration-300 ${buttonDisabled || !selectedSize ? 'opacity-50 ' : 'hover:text-white  hover:bg-slate-400 cursor-pointer'}`}
                         disabled={buttonDisabled || !selectedSize}
                     >
-                        <img className="h-5 pr-2" src="https://cdn-icons-png.flaticon.com/512/468/468209.png" alt="cart icon" />
+                        <img className="h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/468/468209.png" alt="cart icon" />
                         {buttonText}
                     </button>
                 </div>
