@@ -52,6 +52,36 @@
         "name": "White Gray Hoodie",
         "price": 9.99,
         "imgUrl": "/images/reflect9.png"
+    },
+    {
+        "id": 10,
+        "name": "Sincap Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/reflect10.png"
+    },
+    {
+        "id": 11,
+        "name": "Orang S Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/reflect11.png"
+    },
+    {
+        "id": 12,
+        "name": "Blue S Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/reflect12.png"
+    },
+    {
+        "id": 13,
+        "name": "White Tennis Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/reflect13.png"
+    },
+    {
+        "id": 14,
+        "name": "Green Animal Hoodie",
+        "price": 9.99,
+        "imgUrl": "/images/reflect14.png"
     }
     
     
