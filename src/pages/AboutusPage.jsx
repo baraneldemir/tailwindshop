@@ -55,7 +55,7 @@ export default function HomePage() {
                     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
                             <div className="relative max-w-2xl px-4 mx-auto z-1 lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-                                <h1 className="mt-5 overflow-hidden text-4xl font-medium text-gray-900 notLeftAnimated">Grow Comfort, Wear Change.</h1>
+                                <h1 className="pb-1 mt-5 overflow-hidden text-4xl font-medium text-gray-900 notLeftAnimated">Grow Comfort, Wear Change.</h1>
                                 <h1 className="mt-5 overflow-hidden text-xl font-medium text-gray-900 notRightAnimated">We plant 10 tree for every hoodie bought.</h1>
                                 <p className="mt-10 text-sm text-gray-600 notLeftAnimated">At Plant Hoodie, we create comfortable, eco-friendly hoodies made from sustainably sourced materials. With every purchase, you're helping support environmental initiatives like tree planting and waste reduction. Wear something that feels good and does good.</p>
                                 {/* <div className="flex flex-wrap mt-8 gap-x-6 gap-y-4">

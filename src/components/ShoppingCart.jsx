@@ -82,8 +82,8 @@ export default function ShoppingCart({ isSideOpen, toggleSide }) {
                         ))}
                     </div>
 
-                    <div className="flex items-center justify-between mt-4">
-                        <div className="ml-auto text-sm font-bold">
+                    <div className="flex items-center justify-between mt-3 mr-1">
+                        <div className="ml-auto text-lg font-bold">
                             Total{" "} 
                             {FormatCurrency(cartItems.reduce((total, cartItem) => {
                                 const item = storeItems.find(i => i.id === cartItem.id)
