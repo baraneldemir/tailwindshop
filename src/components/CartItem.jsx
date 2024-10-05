@@ -53,13 +53,13 @@ export default function CartItem({ id, quantity, size }) {
                   <p className="ml-3 text-sm font-medium text-gray-900 dark:text-white"> Item Size: {size}</p>
                   <div className="flex items-center mt-2">
                     <div className="flex items-center ml-2 space-x-2">
-                      <button onClick={() => decreaseCartQuantity(item.id)} className="inline-flex items-center justify-center w-8 h-8 border border-gray-300 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                      <button onClick={() => decreaseCartQuantity(item.id, size)} className="inline-flex items-center justify-center w-8 h-8 border border-gray-300 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
                         <svg className="w-4 h-4 text-gray-900 dark:text-white" fill="none" viewBox="0 0 18 2">
                           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h16" />
                         </svg>
                       </button>
                       <div className='inline-flex items-center justify-center w-8 h-8 border border-gray-300 rounded-md shrink-0 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600'>{quantity}</div>
-                      <button onClick={() => increaseCartQuantity(item.id)} className="inline-flex items-center justify-center w-8 h-8 border border-gray-300 rounded-md hover:bg-gray-200 shrink-0 hover:bg-emerald-gray-200">
+                      <button onClick={() => increaseCartQuantity(item.id, size)} className="inline-flex items-center justify-center w-8 h-8 border border-gray-300 rounded-md hover:bg-gray-200 shrink-0 hover:bg-emerald-gray-200">
                         <svg className="w-4 h-4 text-gray-900 dark:text-white" fill="none" viewBox="0 0 18 18">
                           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 1v16M1 9h16" />
                         </svg>
