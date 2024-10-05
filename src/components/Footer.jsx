@@ -59,7 +59,7 @@ export default function Footer() {
                 <span className="mb-2 text-sm font-semibold text-white uppercase ">Useful Links</span>
                 <ul className="list-unstyled">
                   <li>
-                    <Link to="/sustainability" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold hover:text-white ">About Us</Link>
+                    <Link to="/aboutus" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold hover:text-white ">About Us</Link>
                   </li>
                   <li>
                     <Link to="/contactus" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold hover:text-white ">Contact Us</Link>
@@ -76,16 +76,16 @@ export default function Footer() {
                 <span className="mb-2 text-sm font-semibold text-white uppercase ">Other</span>
                 <ul className="list-unstyled">
                   <li>
-                    <Link to="/sustainability" onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Terms &amp; Conditions</Link>
+                    <Link to="/sustainability" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Terms &amp; Conditions</Link>
                   </li>
                   <li>
-                    <Link to="/sustainability" onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Refund Policy</Link>
+                    <Link to="/sustainability" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Refund Policy</Link>
                   </li>
                   <li>
-                    <Link to="/sustainability" onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Privacy Policy</Link>
+                    <Link to="/sustainability" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to="/sustainability" onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Intellectual Property Rights</Link>
+                    <Link to="/sustainability" onTouchStart={scrollToTop} onClick={scrollToTop} className="block pb-2 text-sm font-semibold text-blueGray-600 hover:text-white">Intellectual Property Rights</Link>
                   </li>
                 </ul>
               </div>
