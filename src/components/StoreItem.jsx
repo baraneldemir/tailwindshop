@@ -125,7 +125,7 @@ export default function StoreItem({ id, name, price, imgUrl }) {
 
                 {selectedSize && (
                     <div className='flex flex-row'>
-                        <p className='px-1 text-sm text-black border rounded-lg border-slate-400'>Selected Size: {selectedSize}</p>
+                        <p className='px-1 text-xs text-black border rounded-lg border-slate-400'>Selected Size: {selectedSize}</p>
                         <button onClick={() => handleSizeSelection("")} className='px-1 ml-2 text-sm border rounded-lg cursor-pointer border-slate-400 hover:text-white hover:bg-slate-400'>Clear Selection</button>
                     </div>
                 )}
