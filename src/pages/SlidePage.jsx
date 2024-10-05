@@ -28,7 +28,7 @@ export default function SlidePage() {
     <div>
     <div className="grid w-full grid-cols-1 -mt-40 md:-mt-60 md:grid-cols-2">
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
-        <img className="object-cover w-full h-full shrinkAnimated" alt="..." src={reflect5} />
+        <img className="object-cover w-full h-full shrinkAnimated" alt="..." src={reflect5} loading='eager' />
         <h1 className="absolute text-2xl text-white translate-x-1/2 bottom-10 right-1/2">Clothes</h1>
       </Link>
       <Link onClick={scrollToTop} to="/planthoodie" className="relative">
