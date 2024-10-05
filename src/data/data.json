@@ -2,85 +2,85 @@
     {
         "id": 1,
         "name": "Plant Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect5.png"
     },
     {
         "id": 2,
         "name": "Bear Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect6.png"
     },
     {
         "id": 3,
         "name": "Dark Navy Blue Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect1.png"
     },
     {
         "id": 4,
         "name": "Cyclist Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect2.png"
     },
     {
         "id": 5,
         "name": "Socrates Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect3.png"
     },
     {
         "id": 6,
         "name": "Dark Socrates Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect4.png"
     },
     {
         "id": 7,
         "name": "White Brown Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect7.png"
     },
     {
         "id": 8,
         "name": "White Black Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect8.png"
     },
     {
         "id": 9,
         "name": "White Gray Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect9.png"
     },
     {
         "id": 10,
         "name": "Sincap Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect10.png"
     },
     {
         "id": 11,
         "name": "Orang S Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect11.png"
     },
     {
         "id": 12,
         "name": "Blue S Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect12.png"
     },
     {
         "id": 13,
         "name": "White Tennis Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect13.png"
     },
     {
         "id": 14,
         "name": "Green Animal Hoodie",
-        "price": 9.99,
+        "price": 39.99,
         "imgUrl": "/images/reflect14.png"
     }
     
