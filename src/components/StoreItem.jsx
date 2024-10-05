@@ -90,7 +90,7 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                     {isShowSaved ? "Item Saved!" : ""}
                     </span>
                 </button>
-                <img ref={imgRef} className="relative z-0 transition-all duration-300 notLeftAnimated hover:scale-125 min-h-52 min-w-40 lg:min-h-96 lg:min-w-96 dark:hidden" src={imgUrl} alt="hoodie" />
+                <img ref={imgRef} loading='eager' className="relative z-0 transition-all duration-300 notLeftAnimated hover:scale-125 min-h-52 min-w-40 lg:min-h-96 lg:min-w-96 dark:hidden" src={imgUrl} alt="hoodie" />
             </div>
 
             <div>
