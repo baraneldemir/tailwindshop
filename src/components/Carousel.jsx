@@ -1,6 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
+import { useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -18,6 +20,7 @@ import reflect6 from '../images/reflect6.png'
 
 export default function Carousel() {
   const navigate = useNavigate();
+  const [shuffledSlides, setShuffledSlides] = useState([]);
 
 
   // Function to handle navigation and scroll action
@@ -42,38 +45,27 @@ export default function Carousel() {
   }
   
 
-    const slides = [
-        {
-          title: "Product Brown",
-          content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
-          backgroundImage: reflect2 ,
-        },
-        {
-          title: "Product Red",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: reflect1,
-        },
-        {
-          title: "Product Brown",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: reflect3,
-        },
-        {
-          title: "Product Yellow",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: reflect4,
-        },
-        {
-          title: "Product White",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: reflect5,
-        },
-        {
-          title: "Product Black",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          backgroundImage: reflect6,
-        },
-    ];
+
+  const slides = useMemo(() => [
+    { title: "Product Brown", backgroundImage: reflect2 },
+    { title: "Product Red", backgroundImage: reflect1 },
+    { title: "Product Black", backgroundImage: reflect3 },
+    { title: "Product Yellow", backgroundImage: reflect4 },
+    { title: "Product White", backgroundImage: reflect5 },
+    { title: "Product Gray", backgroundImage: reflect6 },
+  ], []);
+  
+
+  useEffect(() => {
+    const shuffleArray = (array) => {
+      return array
+        .map((item) => ({ ...item, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map((item) => ({ title: item.title, content: item.content, backgroundImage: item.backgroundImage }));
+    };
+
+    setShuffledSlides(shuffleArray(slides));
+  }, [slides]);
 
   return (
     <div className="mb-20 flex items-center justify-center flex-col h-[350px] lg:h-[500px] bg-white">
@@ -100,9 +92,9 @@ export default function Carousel() {
         modules={[ Pagination, Navigation]}
         className="max-w-[90%] lg:max-w-[80%]"
       >
-        {slides.map((item) => (
+        {shuffledSlides.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className="flex-col gap-6 relative shadow-lg mb-10 text-gray-300  px-3 py-3 h-[250px] w-[180px] lg:h-[400px] lg:w-[370px] md:mt-5 overflow-hidden ">
+            <div className="flex-col gap-6 relative shadow-lg mb-10 text-gray-300 rounded-lg px-3 py-3 h-[250px] w-[170px] lg:h-[400px] lg:w-[370px] md:mt-5 overflow-hidden ">
               <div 
                 className="absolute inset-0 z-0 transition-all duration-300 bg-center bg-cover rounded-lg hover:scale-110"
                 style={{ backgroundImage: `url(${item.backgroundImage})`}}

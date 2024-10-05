@@ -69,7 +69,7 @@ export default function StoreItem({ id, name, price, imgUrl }) {
 
         setTimeout(() => {
             setAnimating(false)
-            increaseCartQuantity(id)
+            increaseCartQuantity(id, selectedSize)
             handleSizeSelection("")
 
             // Reset the button after 2 seconds
