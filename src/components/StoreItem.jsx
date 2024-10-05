@@ -91,9 +91,9 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                     className="absolute left-0 inline-flex items-center justify-center gap-2 p-2.5 text-sm font-medium text-green-800"
                 >
                     {isSaved ? (
-                        <RxBookmarkFilled className="z-10 w-6 h-6 hover:text-green-600" />
+                        <RxBookmarkFilled className="z-10 w-6 h-6 " />
                     ) : (
-                        <RxBookmark className="z-10 w-6 h-6 hover:text-green-600" />
+                        <RxBookmark className="z-10 w-6 h-6 " />
                     )}
                     <span className='z-10 bg-white rounded-lg opacity-80'>
                         {isShowSaved ? saveMessage : ""}
