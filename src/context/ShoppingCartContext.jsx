@@ -29,7 +29,7 @@ export function ShoppingCartProvider ({children}) {
             } else {
                 return currItems.map(item => {
                     if (item.id === id && item.size === selectedSize) {
-                        return { ...item, quantity: item.quantity + 1, size: selectedSize };
+                        return { ...item, quantity: item.quantity + 1 };
                     } else {
                         return item;
                     }
@@ -39,13 +39,15 @@ export function ShoppingCartProvider ({children}) {
     }
     
 
-    function decreaseCartQuantity(id) {
+    function decreaseCartQuantity(id, selectedSize) {
         setCartItems(currItems => {
-            if (currItems.find(item => item.id === id)?.quantity === 1 ) {
-                return currItems.filter(item => item.id !== id)
+            const existingItem = currItems.find(item => item.id === id && item.size === selectedSize);
+
+            if (!existingItem || existingItem.quantity === 1){
+                return currItems.filter(item => item.id !== id || item.size !== selectedSize)
             } else {
                 return currItems.map(item => {
-                    if (item.id === id) {
+                    if (item.id === id  && item.size === selectedSize) {
                         return { ...item, quantity: item.quantity - 1 }
                     } else {
                         return item
