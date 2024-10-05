@@ -115,7 +115,7 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                     {["XS", "S", "M", "L", "XL"].map(size => (
                         <button
                             key={size}
-                            className={`w-7 p-1 border rounded-full mr-1 border-slate-400 hover:bg-slate-400 hover:text-white ${selectedSize === size ? 'bg-slate-700 text-white' : ''}`}
+                            className={`w-7 p-1 text-xs border rounded-full mr-1 border-slate-400 hover:bg-slate-400 hover:text-white ${selectedSize === size ? 'bg-slate-700 text-white' : ''}`}
                             onClick={() => handleSizeSelection(size)}
                         >
                             {size}
@@ -126,7 +126,7 @@ export default function StoreItem({ id, name, price, imgUrl }) {
                 {selectedSize && (
                     <div className='flex flex-row'>
                         <p className='px-1 text-xs text-black border rounded-lg border-slate-400'>Selected Size: {selectedSize}</p>
-                        <button onClick={() => handleSizeSelection("")} className='px-1 ml-2 text-sm border rounded-lg cursor-pointer border-slate-400 hover:text-white hover:bg-slate-400'>Clear Selection</button>
+                        <button onClick={() => handleSizeSelection("")} className='px-1 ml-1 text-xs border rounded-lg cursor-pointer border-slate-400 hover:text-white hover:bg-slate-400'>Clear Selection</button>
                     </div>
                 )}
 
